@@ -1,3 +1,4 @@
+İlaçVakti — Gizlilik Politikası
 Son Güncelleme: 13 Mayıs 2026
 
 İlaçVakti, Eczacı Mehmet Tuğberk Özsoy tarafından geliştirilen, kullanıcıların ilaç takibini kolaylaştıran bir mobil uygulamadır. Kullanıcılarımızın gizliliği temel önceliğimizdir; bu politika hangi verilerin nasıl işlendiğini şeffafça açıklar.
