@@ -6,7 +6,7 @@ permalink: /privacy-en/
 
 # MedTime (İlaçVakti) — Privacy Policy
 
-**Last updated:** 15 May 2026
+**Last updated:** 17 May 2026
 
 MedTime (İlaçVakti) is a mobile application developed by Pharmacist **Mehmet Tuğberk Özsoy**, designed to help users track their medications. Your privacy is our top priority; this policy transparently explains what data is processed and how.
 
@@ -54,6 +54,9 @@ Camera access is requested only on the *"Add Medication"* screen, to scan barcod
 
 ### 3.3 Photos
 Optional photo library access is requested if you want to add medication or profile photos. Selected photos are copied only to the app's internal folder on your device.
+
+### 3.4 Barcode Medication Lookup
+When you scan the barcode/QR code on a medication box, only the **barcode number** is sent to a medication database service called NosyAPI to retrieve the medication name and details (prospectus, expiry date, etc.). No personal information (your name, profile data, health data, photos, or camera footage) is included in this query — only the scanned product barcode number is transmitted. This feature is optional; if you do not scan a barcode, no data is sent.
 
 You can revoke permissions anytime via iOS *Settings &gt; MedTime*.
 
@@ -111,6 +114,7 @@ Apple Standard EULA applies: <https://www.apple.com/legal/internet-services/itun
 
 MedTime does **not share user data with any third party, does not sell it, and does not use it for marketing purposes**. The only exceptions are:
 
+- The barcode lookup described in Section 3.4 (NosyAPI) — only the scanned product barcode number is transmitted; it contains no personal data.
 - Anonymous crash reports described in Section 4 (Sentry).
 - Anonymous subscription validation data described in Section 5 (RevenueCat + Apple).
 
