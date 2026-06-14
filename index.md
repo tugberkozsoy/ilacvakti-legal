@@ -9,6 +9,11 @@ title: İlaçVakti — Yasal Belgeler / Legal
 
 - 🇹🇷 [Türkçe](/ilacvakti-legal/privacy-tr/)
 - 🇬🇧 [English](/ilacvakti-legal/privacy-en/)
+- 🇩🇪 [Deutsch](/ilacvakti-legal/privacy-de/)
+- 🇪🇸 [Español](/ilacvakti-legal/privacy-es/)
+- 🇫🇷 [Français](/ilacvakti-legal/privacy-fr/)
+- 🇧🇷 [Português](/ilacvakti-legal/privacy-pt/)
+- 🇮🇹 [Italiano](/ilacvakti-legal/privacy-it/)
 
 ## Kullanım Koşulları / Terms of Use
 

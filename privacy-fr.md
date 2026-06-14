@@ -1,0 +1,155 @@
+---
+layout: default
+title: Politique de Confidentialité
+permalink: /privacy-fr/
+---
+
+# MedTime (İlaçVakti) — Politique de Confidentialité
+
+**Dernière mise à jour :** 17 mai 2026
+
+MedTime (İlaçVakti) est une application mobile développée par le Pharmacien **Mehmet Tuğberk Özsoy**, conçue pour aider les utilisateurs à suivre leurs médicaments. Votre vie privée est notre priorité absolue ; cette politique explique de manière transparente quelles données sont traitées et de quelle façon.
+
+Autres langues : [English](/ilacvakti-legal/privacy-en/) · [Türkçe](/ilacvakti-legal/privacy-tr/)
+
+---
+
+## 1. Données Non Collectées
+
+MedTime ne collecte **pas** d'identifiants personnels (nom, e-mail, téléphone, numéro d'identité, date de naissance, etc.) auprès des utilisateurs, ne les envoie pas à nos serveurs et ne les partage pas avec des tiers. Aucune création de compte n'est requise ; l'application fonctionne entièrement de manière **anonyme**.
+
+Liste détaillée des données non collectées :
+- ❌ Suivi publicitaire ou analytique
+- ❌ Services d'analyse tiers (Google Analytics, Facebook Pixel, etc.)
+- ❌ Données de localisation
+- ❌ Contacts, calendrier, microphone
+- ❌ Création de compte, e-mail, téléphone
+- ❌ Données Apple Health
+
+---
+
+## 2. Stockage Local (Données Conservées sur Votre Appareil)
+
+Toutes les informations que vous saisissez sont stockées **uniquement dans la mémoire interne de votre appareil** :
+
+- Noms des médicaments, dosages, heures de rappel
+- Noms de profil (noms que vous fournissez) et photo de profil facultative
+- Informations sur le stock de médicaments et photos
+- Historique de traitement, journaux des prises/oublis
+- Données de séries (streaks) et de badges
+- Rapports de santé et notes ajoutés manuellement
+- Préférences de thème, de langue, de son de notification et de paramètres
+
+Lorsque vous supprimez l'application, toutes ces données sont supprimées avec votre appareil.
+
+---
+
+## 3. Autorisations
+
+### 3.1 Notifications
+L'autorisation de notification est demandée pour les rappels de médicaments. Les notifications sont planifiées **localement sur votre appareil** ; aucune connexion à un serveur n'est impliquée.
+
+### 3.2 Caméra
+L'accès à la caméra est demandé uniquement sur l'écran *« Ajouter un médicament »*, afin de scanner les codes-barres/QR codes des boîtes de médicaments ou de prendre des photos des médicaments. Les images de la caméra ne sont pas envoyées à un serveur.
+
+### 3.3 Photos
+L'accès facultatif à la photothèque est demandé si vous souhaitez ajouter des photos de médicaments ou de profil. Les photos sélectionnées sont copiées uniquement dans le dossier interne de l'application sur votre appareil.
+
+### 3.4 Recherche de Médicament par Code-barres
+Lorsque vous scannez le code-barres/QR code d'une boîte de médicament, seul le **numéro de code-barres** est envoyé à un service de base de données de médicaments appelé NosyAPI afin de récupérer le nom et les détails du médicament (notice, date de péremption, etc.). Aucune information personnelle (votre nom, vos données de profil, vos données de santé, vos photos ou les images de la caméra) n'est incluse dans cette requête — seul le numéro de code-barres du produit scanné est transmis. Cette fonctionnalité est facultative ; si vous ne scannez pas de code-barres, aucune donnée n'est envoyée.
+
+Vous pouvez révoquer les autorisations à tout moment via iOS *Réglages &gt; MedTime*.
+
+---
+
+## 4. Rapports de Plantage (Sentry)
+
+Pour améliorer la stabilité de l'application, des rapports de plantage anonymes sont collectés via le service **Sentry**.
+
+**Collecté :**
+- Horodatage du plantage, modèle de l'appareil, version iOS, version de l'application
+- Message d'erreur et trace technique de la pile (stack trace)
+- Contexte technique précédant le plantage (par ex. écrans ouverts)
+
+**Non collecté :**
+- Nom d'utilisateur, e-mail, adresse IP (`sendDefaultPii` désactivé)
+- Captures d'écran, données personnelles de médicaments, données de santé
+- Photos ou contenus de rapports
+
+Les données Sentry sont utilisées uniquement pour l'amélioration de l'application ; **jamais** à des fins de marketing ou de publicité. Les données Sentry sont conservées jusqu'à **90 jours**.
+
+Politique de confidentialité de Sentry : <https://sentry.io/privacy/>
+
+---
+
+## 5. Abonnement Premium et RevenueCat
+
+MedTime propose un **abonnement Premium** facultatif :
+
+| Formule | Prix | Fonctionnalités |
+|---|---|---|
+| Mensuel | environ 0,99 $ | Renouvellement automatique |
+| Annuel | environ 5,99 $ | Inclut un **essai gratuit de 7 jours**, renouvellement automatique |
+
+### Gestion de l'Abonnement
+- Les abonnements se renouvellent automatiquement ; le paiement est prélevé sur votre compte iTunes s'il n'est pas annulé au moins **24 heures** avant la fin de la période en cours.
+- Annuler : iOS *Réglages → Apple ID → Abonnements*.
+- Le **Partage familial** est activé — un abonnement peut être partagé avec jusqu'à 5 membres de la famille.
+- Les paiements sont traités par Apple ; MedTime n'a aucun accès aux informations de carte bancaire.
+
+### Accès Gratuit à Vie pour les Premiers Utilisateurs
+Les utilisateurs ayant installé la version **2.0.1 (build 5) ou antérieure** bénéficient automatiquement d'un accès **Premium gratuit à vie**. Ceci est vérifié de manière anonyme sur l'appareil à l'aide du champ `originalApplicationVersion` du reçu Apple.
+
+### RevenueCat (Validation de l'Abonnement)
+Le service **RevenueCat** est utilisé pour valider l'état de l'abonnement. Un identifiant anonyme (App User ID) dérivé de votre Apple ID ainsi que les données du reçu Apple sont envoyés à RevenueCat. Votre nom, votre e-mail ou vos coordonnées ne sont **pas partagés**.
+
+Politique de confidentialité de RevenueCat : <https://www.revenuecat.com/privacy/>
+
+### Conditions d'Utilisation
+Le CLUF standard d'Apple s'applique : <https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>
+
+---
+
+## 6. Partage des Données
+
+MedTime ne **partage pas les données des utilisateurs avec un tiers, ne les vend pas et ne les utilise pas à des fins de marketing**. Les seules exceptions sont :
+
+- La recherche par code-barres décrite dans la Section 3.4 (NosyAPI) — seul le numéro de code-barres du produit scanné est transmis ; il ne contient aucune donnée personnelle.
+- Les rapports de plantage anonymes décrits dans la Section 4 (Sentry).
+- Les données anonymes de validation d'abonnement décrites dans la Section 5 (RevenueCat + Apple).
+
+---
+
+## 7. Vos Droits au Titre du RGPD (Utilisateurs de l'UE)
+
+Si vous résidez dans l'UE, en vertu du Règlement Général sur la Protection des Données (RGPD), vous disposez des droits d'**accès, de rectification, d'effacement, d'opposition au traitement et de portabilité des données**. Nos bases légales sont : la nécessité pour la fourniture du service (Article 6(1)(b)) et l'intérêt légitime pour le signalement des erreurs (Article 6(1)(f)).
+
+---
+
+## 8. Vos Droits au Titre de la KVKK Turque
+
+En vertu de l'article 11 de la loi turque sur la protection des données personnelles (KVKK), vous disposez de droits incluant : savoir si vos données sont traitées, demander des informations, demander la rectification ou la suppression, connaître les tiers auxquels les données ont été transférées, vous opposer aux résultats d'un traitement automatisé et réclamer une indemnisation. Pour exercer ces droits, contactez <ilacvaktidestek@gmail.com>. Les demandes reçoivent une réponse sous **30 jours**.
+
+---
+
+## 9. Confidentialité des Enfants
+
+L'application est classée **4+**. Aucune donnée n'est sciemment collectée auprès d'enfants de moins de 13 ans. Si un parent utilise l'application pour ajouter un profil d'enfant (membre de la famille), les données de ce profil restent stockées localement sur l'appareil uniquement.
+
+---
+
+## 10. Sécurité des Données
+
+Comme vos données sont principalement stockées sur votre appareil, elles sont protégées par le chiffrement matériel d'iOS (Secure Enclave). Les communications avec les services tiers sont chiffrées via HTTPS.
+
+---
+
+## 11. Modifications de Cette Politique
+
+Nous pouvons mettre à jour cette politique de temps à autre. Les modifications importantes seront annoncées par une notification dans l'application ou via les notes de version. Veuillez consulter régulièrement la date de *Dernière mise à jour*.
+
+---
+
+## 12. Contact
+
+E-mail : <ilacvaktidestek@gmail.com>
