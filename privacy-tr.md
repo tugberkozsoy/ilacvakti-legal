@@ -55,8 +55,8 @@ Sadece *"İlaç Ekle"* ekranında, ilaç kutusu üzerindeki barkod/QR kodları t
 ### 3.3 Fotoğraflar
 İsteğe bağlı olarak ilaç veya profil fotoğrafı eklemek için galeri erişimi istenir. Seçtiğiniz fotoğraflar yalnızca cihazınızın uygulama dahili klasörüne kopyalanır.
 
-### 3.4 Barkod ile İlaç Sorgulama
-İlaç kutusu üzerindeki barkod/karekodu taradığınızda, ilaç adı ve bilgilerini (prospektüs, son kullanma tarihi vb.) getirmek için yalnızca **barkod numarası** NosyAPI adlı ilaç veritabanı servisine gönderilir. Bu sorguya hiçbir kişisel bilgi (adınız, profil bilgisi, sağlık verisi, fotoğraf veya kamera görüntüsü) eklenmez — yalnızca taranan ürün barkod numarası iletilir. Bu özellik isteğe bağlıdır; barkod taramazsanız hiçbir veri gönderilmez.
+### 3.4 İlaç Veritabanı Sorgulama
+İlaç kutusu üzerindeki barkod/karekodu taradığınızda veya bir ilacı adıyla aradığınızda, ilaç adı ve bilgilerini (prospektüs, ambalaj, son kullanma tarihi vb.) getirmek için yalnızca ilgili **barkod/ürün kodu veya ilaç adı** resmi bir ilaç veritabanı servisine gönderilir. Hangi servisin kullanılacağı cihaz bölgenize bağlıdır: **NosyAPI** (Türkiye), **ABD FDA openFDA** veritabanı (Amerika Birleşik Devletleri) veya **AEMPS CIMA** (İspanya). Bu sorguya hiçbir kişisel bilgi (adınız, profil bilgisi, sağlık verisi, fotoğraf veya kamera görüntüsü) eklenmez — yalnızca taranan kod veya arama terimi iletilir. Bu özellik isteğe bağlıdır; kullanmazsanız hiçbir veri gönderilmez.
 
 İzinleri iOS *Ayarlar &gt; İlaçVakti* üzerinden istediğiniz zaman iptal edebilirsiniz.
 
@@ -114,7 +114,7 @@ Apple Standart EULA geçerlidir: <https://www.apple.com/legal/internet-services/
 
 İlaçVakti kullanıcı verilerini **hiçbir üçüncü tarafla paylaşmaz, satmaz veya pazarlama amacıyla kullanmaz**. Tek istisnalar:
 
-- Bölüm 3.4'te belirtilen barkod sorgulaması (NosyAPI) — yalnızca taranan ürün barkod numarası iletilir, kişisel veri içermez.
+- Bölüm 3.4'te belirtilen ilaç veritabanı sorgulamaları (NosyAPI / ABD FDA openFDA / AEMPS CIMA) — yalnızca taranan kod veya aranan ilaç adı iletilir, kişisel veri içermez.
 - Bölüm 4'te belirtilen anonim çökme raporları (Sentry).
 - Bölüm 5'te belirtilen anonim abonelik doğrulama verisi (RevenueCat + Apple).
 

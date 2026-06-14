@@ -55,8 +55,8 @@ Der Kamerazugriff wird ausschließlich auf dem Bildschirm *„Medikament hinzuf�
 ### 3.3 Fotos
 Ein optionaler Zugriff auf die Fotomediathek wird angefragt, wenn Sie Medikamenten- oder Profilfotos hinzufügen möchten. Ausgewählte Fotos werden ausschließlich in den internen Ordner der App auf Ihrem Gerät kopiert.
 
-### 3.4 Medikamentensuche per Barcode
-Wenn Sie den Barcode/QR-Code auf einer Medikamentenschachtel scannen, wird ausschließlich die **Barcode-Nummer** an einen Medikamentendatenbankdienst namens NosyAPI gesendet, um den Medikamentennamen und weitere Details (Beipackzettel, Verfallsdatum usw.) abzurufen. In dieser Abfrage sind keinerlei personenbezogene Daten (Ihr Name, Profildaten, Gesundheitsdaten, Fotos oder Kameraaufnahmen) enthalten – übertragen wird ausschließlich die gescannte Produkt-Barcode-Nummer. Diese Funktion ist optional; wenn Sie keinen Barcode scannen, werden keine Daten gesendet.
+### 3.4 Medikamentendatenbank-Abfrage
+Wenn Sie einen Barcode/QR-Code auf einer Medikamentenschachtel scannen oder ein Medikament nach Namen suchen, wird ausschließlich dieser **Barcode bzw. Produktcode oder der Medikamentenname** an einen offiziellen Medikamentendatenbankdienst gesendet, um den Medikamentennamen und weitere Details (Beipackzettel, Verpackung, Verfallsdatum usw.) abzurufen. Welcher Dienst verwendet wird, hängt von der Region Ihres Geräts ab: **NosyAPI** (Türkei), die **U.S. FDA openFDA**-Datenbank (Vereinigte Staaten) oder **AEMPS CIMA** (Spanien). In dieser Abfrage sind keinerlei personenbezogene Daten (Ihr Name, Profildaten, Gesundheitsdaten, Fotos oder Kameraaufnahmen) enthalten – übertragen wird ausschließlich der gescannte Code oder der Suchbegriff. Diese Funktion ist optional; wenn Sie sie nicht nutzen, werden keine Daten gesendet.
 
 Sie können erteilte Berechtigungen jederzeit über die iOS-*Einstellungen &gt; MedTime* widerrufen.
 
@@ -114,7 +114,7 @@ Es gilt der Apple-Standard-EULA: <https://www.apple.com/legal/internet-services/
 
 MedTime **gibt Nutzerdaten an keinen Dritten weiter, verkauft sie nicht und verwendet sie nicht zu Marketingzwecken**. Die einzigen Ausnahmen sind:
 
-- Die in Abschnitt 3.4 beschriebene Barcode-Suche (NosyAPI) – übertragen wird ausschließlich die gescannte Produkt-Barcode-Nummer; sie enthält keine personenbezogenen Daten.
+- Die in Abschnitt 3.4 beschriebenen Medikamentendatenbank-Abfragen (NosyAPI / U.S. FDA openFDA / AEMPS CIMA) – übertragen wird ausschließlich der gescannte Code oder der gesuchte Medikamentenname; sie enthalten keine personenbezogenen Daten.
 - Die in Abschnitt 4 beschriebenen anonymen Absturzberichte (Sentry).
 - Die in Abschnitt 5 beschriebenen anonymen Daten zur Abonnement-Validierung (RevenueCat + Apple).
 

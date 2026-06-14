@@ -55,8 +55,8 @@ L'accesso alla fotocamera viene richiesto solo nella schermata *"Aggiungi Farmac
 ### 3.3 Foto
 L'accesso facoltativo alla libreria fotografica viene richiesto se desiderate aggiungere foto dei farmaci o del profilo. Le foto selezionate vengono copiate esclusivamente nella cartella interna dell'app sul vostro dispositivo.
 
-### 3.4 Ricerca del Farmaco tramite Codice a Barre
-Quando scansionate il codice a barre/codice QR su una confezione di farmaci, viene inviato solo il **numero del codice a barre** a un servizio di database farmaceutico denominato NosyAPI, al fine di recuperare il nome del farmaco e i relativi dettagli (foglietto illustrativo, data di scadenza, ecc.). In questa richiesta non è incluso alcun dato personale (il vostro nome, i dati del profilo, i dati sanitari, le foto o le immagini della fotocamera) — viene trasmesso unicamente il numero del codice a barre del prodotto scansionato. Questa funzione è facoltativa; se non scansionate un codice a barre, non viene inviato alcun dato.
+### 3.4 Ricerca nel Database dei Farmaci
+Quando scansionate un codice a barre/codice QR su una confezione di farmaci o cercate un farmaco per nome, viene inviato unicamente quel **numero del codice a barre/codice prodotto o il nome del farmaco** a un servizio ufficiale di database farmaceutico, al fine di recuperare il nome del farmaco e i relativi dettagli (foglietto illustrativo, confezione, data di scadenza, ecc.). Il servizio utilizzato dipende dalla regione del vostro dispositivo: **NosyAPI** (Turchia), il database **U.S. FDA openFDA** (Stati Uniti) o **AEMPS CIMA** (Spagna). In questa richiesta non è incluso alcun dato personale (il vostro nome, i dati del profilo, i dati sanitari, le foto o le immagini della fotocamera) — viene trasmesso unicamente il codice scansionato o il termine di ricerca. Questa funzione è facoltativa; se non la utilizzate, non viene inviato alcun dato.
 
 Potete revocare le autorizzazioni in qualsiasi momento tramite *Impostazioni &gt; MedTime* di iOS.
 
@@ -114,7 +114,7 @@ Si applica il Contratto di Licenza con l'Utente Finale (EULA) Standard di Apple:
 
 MedTime **non condivide i dati degli utenti con alcuna terza parte, non li vende e non li utilizza per finalità di marketing**. Le uniche eccezioni sono:
 
-- La ricerca tramite codice a barre descritta nella Sezione 3.4 (NosyAPI) — viene trasmesso unicamente il numero del codice a barre del prodotto scansionato; non contiene alcun dato personale.
+- Le ricerche nel database dei farmaci descritte nella Sezione 3.4 (NosyAPI / U.S. FDA openFDA / AEMPS CIMA) — viene trasmesso unicamente il codice scansionato o il nome del farmaco cercato; non contiene alcun dato personale.
 - Le segnalazioni anonime di arresto anomalo descritte nella Sezione 4 (Sentry).
 - I dati anonimi di convalida dell'abbonamento descritti nella Sezione 5 (RevenueCat + Apple).
 

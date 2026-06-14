@@ -55,8 +55,8 @@ L'accès à la caméra est demandé uniquement sur l'écran *« Ajouter un médi
 ### 3.3 Photos
 L'accès facultatif à la photothèque est demandé si vous souhaitez ajouter des photos de médicaments ou de profil. Les photos sélectionnées sont copiées uniquement dans le dossier interne de l'application sur votre appareil.
 
-### 3.4 Recherche de Médicament par Code-barres
-Lorsque vous scannez le code-barres/QR code d'une boîte de médicament, seul le **numéro de code-barres** est envoyé à un service de base de données de médicaments appelé NosyAPI afin de récupérer le nom et les détails du médicament (notice, date de péremption, etc.). Aucune information personnelle (votre nom, vos données de profil, vos données de santé, vos photos ou les images de la caméra) n'est incluse dans cette requête — seul le numéro de code-barres du produit scanné est transmis. Cette fonctionnalité est facultative ; si vous ne scannez pas de code-barres, aucune donnée n'est envoyée.
+### 3.4 Consultation de la Base de Données de Médicaments
+Lorsque vous scannez le code-barres/QR code d'une boîte de médicament ou que vous recherchez un médicament par son nom, seul **ce code-barres/code produit ou le nom du médicament** est envoyé à un service officiel de base de données de médicaments afin de récupérer le nom et les détails du médicament (notice, conditionnement, date de péremption, etc.). Le service utilisé dépend de la région de votre appareil : **NosyAPI** (Turquie), la base de données **U.S. FDA openFDA** (États-Unis) ou **AEMPS CIMA** (Espagne). Aucune information personnelle (votre nom, vos données de profil, vos données de santé, vos photos ou les images de la caméra) n'est incluse dans cette requête — seul le code scanné ou le terme de recherche est transmis. Cette fonctionnalité est facultative ; si vous ne l'utilisez pas, aucune donnée n'est envoyée.
 
 Vous pouvez révoquer les autorisations à tout moment via iOS *Réglages &gt; MedTime*.
 
@@ -114,7 +114,7 @@ Le CLUF standard d'Apple s'applique : <https://www.apple.com/legal/internet-serv
 
 MedTime ne **partage pas les données des utilisateurs avec un tiers, ne les vend pas et ne les utilise pas à des fins de marketing**. Les seules exceptions sont :
 
-- La recherche par code-barres décrite dans la Section 3.4 (NosyAPI) — seul le numéro de code-barres du produit scanné est transmis ; il ne contient aucune donnée personnelle.
+- Les consultations de la base de données de médicaments décrites dans la Section 3.4 (NosyAPI / U.S. FDA openFDA / AEMPS CIMA) — seul le code scanné ou le nom du médicament recherché est transmis ; il ne contient aucune donnée personnelle.
 - Les rapports de plantage anonymes décrits dans la Section 4 (Sentry).
 - Les données anonymes de validation d'abonnement décrites dans la Section 5 (RevenueCat + Apple).
 

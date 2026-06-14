@@ -55,8 +55,8 @@ O acesso à câmera é solicitado apenas na tela *"Adicionar Medicamento"*, para
 ### 3.3 Fotos
 O acesso à biblioteca de fotos é solicitado de forma opcional, caso você queira adicionar fotos de medicamentos ou de perfil. As fotos selecionadas são copiadas apenas para a pasta interna do aplicativo no seu dispositivo.
 
-### 3.4 Consulta de Medicamento por Código de Barras
-Ao escanear o código de barras/QR na caixa de um medicamento, apenas o **número do código de barras** é enviado a um serviço de banco de dados de medicamentos chamado NosyAPI para obter o nome e os detalhes do medicamento (bula, data de validade, etc.). Nenhuma informação pessoal (seu nome, dados de perfil, dados de saúde, fotos ou imagens da câmera) é incluída nessa consulta — apenas o número do código de barras do produto escaneado é transmitido. Este recurso é opcional; se você não escanear um código de barras, nenhum dado é enviado.
+### 3.4 Consulta ao Banco de Dados de Medicamentos
+Ao escanear o código de barras/QR na caixa de um medicamento ou pesquisar um medicamento pelo nome, apenas esse **código de barras/código do produto ou o nome do medicamento** é enviado a um serviço oficial de banco de dados de medicamentos para obter o nome e os detalhes do medicamento (bula, embalagem, data de validade, etc.). O serviço utilizado depende da região do seu dispositivo: **NosyAPI** (Turquia), o banco de dados **U.S. FDA openFDA** (Estados Unidos) ou **AEMPS CIMA** (Espanha). Nenhuma informação pessoal (seu nome, dados de perfil, dados de saúde, fotos ou imagens da câmera) é incluída nessa consulta — apenas o código escaneado ou o termo de pesquisa é transmitido. Este recurso é opcional; se você não o utilizar, nenhum dado é enviado.
 
 Você pode revogar as permissões a qualquer momento em iOS *Ajustes &gt; MedTime*.
 
@@ -114,7 +114,7 @@ Aplica-se o EULA Padrão da Apple: <https://www.apple.com/legal/internet-service
 
 O MedTime **não compartilha os dados dos usuários com terceiros, não os vende e não os utiliza para fins de marketing**. As únicas exceções são:
 
-- A consulta por código de barras descrita na Seção 3.4 (NosyAPI) — apenas o número do código de barras do produto escaneado é transmitido; não contém nenhum dado pessoal.
+- As consultas ao banco de dados de medicamentos descritas na Seção 3.4 (NosyAPI / U.S. FDA openFDA / AEMPS CIMA) — apenas o código escaneado ou o nome do medicamento pesquisado é transmitido; não contém nenhum dado pessoal.
 - Os relatórios anônimos de falhas descritos na Seção 4 (Sentry).
 - Os dados anônimos de validação de assinatura descritos na Seção 5 (RevenueCat + Apple).
 
