@@ -6,7 +6,7 @@ permalink: /privacy-en/
 
 # MedTime (İlaçVakti) — Privacy Policy
 
-**Last updated:** 17 May 2026
+**Last updated:** July 14, 2026
 
 MedTime (İlaçVakti) is a mobile application developed by Pharmacist **Mehmet Tuğberk Özsoy**, designed to help users track their medications. Your privacy is our top priority; this policy transparently explains what data is processed and how.
 
@@ -24,7 +24,7 @@ Detailed list of data not collected:
 - ❌ Location data
 - ❌ Contacts, calendar, microphone
 - ❌ Account creation, email, phone
-- ❌ Apple Health data
+- ❌ Apple Health data is **never read** (for the optional write-only sync, see 3.5)
 
 ---
 
@@ -59,6 +59,16 @@ Optional photo library access is requested if you want to add medication or prof
 When you scan a barcode/QR code on a medication box or search for a medicine by name, only that **barcode/product code or the medicine name** is sent to an official medication-database service to retrieve the medicine's name and details (leaflet, package, expiry date, etc.). The service used depends on your device region: **NosyAPI** (Turkey), the **U.S. FDA openFDA** database (United States), or **AEMPS CIMA** (Spain). No personal information (your name, profile data, health data, photos, or camera footage) is included in this query — only the scanned code or the search term is transmitted. This feature is optional; if you do not use it, no data is sent.
 
 You can revoke permissions anytime via iOS *Settings &gt; MedTime*.
+
+### 3.5 Apple Health (HealthKit) — Optional Write-Only Sync
+Premium users can optionally enable *Settings → Save to Apple Health* so that the **blood pressure, blood glucose and heart rate** measurements they enter in the app are **also written** to the Apple Health app. This feature is **entirely optional** and **off by default**.
+
+- İlaçVakti **never reads** your Health data; access is **write-only** and explicitly approved through the iOS permission sheet.
+- Only measurements belonging to **your own profile** are written; family member profiles are never synced.
+- Data goes directly into the Health store on your device; **nothing is sent to any server**. Your Health data is encrypted by Apple.
+- If you delete or edit a measurement in the app, its copy written to Health is updated/removed accordingly.
+- You can revoke access anytime via iOS *Settings → Health → Data Access & Devices → İlaçVakti*.
+- Health data is never used for advertising, marketing or analytics (compliant with App Store Guideline 5.1.3).
 
 ---
 

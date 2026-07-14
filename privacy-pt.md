@@ -6,7 +6,7 @@ permalink: /privacy-pt/
 
 # MedTime (İlaçVakti) — Política de Privacidade
 
-**Última atualização:** 17 de maio de 2026
+**Última atualização:** 14 de julho de 2026
 
 O MedTime (İlaçVakti) é um aplicativo móvel desenvolvido pelo Farmacêutico **Mehmet Tuğberk Özsoy**, projetado para ajudar os usuários a controlar seus medicamentos. Sua privacidade é nossa prioridade máxima; esta política explica de forma transparente quais dados são tratados e como.
 
@@ -24,7 +24,7 @@ Lista detalhada dos dados não coletados:
 - ❌ Dados de localização
 - ❌ Contatos, calendário, microfone
 - ❌ Criação de conta, e-mail, telefone
-- ❌ Dados do Apple Health
+- ❌ Os dados do Apple Saúde **nunca são lidos** (para a sincronização opcional somente-escrita, veja 3.5)
 
 ---
 
@@ -59,6 +59,16 @@ O acesso à biblioteca de fotos é solicitado de forma opcional, caso você quei
 Ao escanear o código de barras/QR na caixa de um medicamento ou pesquisar um medicamento pelo nome, apenas esse **código de barras/código do produto ou o nome do medicamento** é enviado a um serviço oficial de banco de dados de medicamentos para obter o nome e os detalhes do medicamento (bula, embalagem, data de validade, etc.). O serviço utilizado depende da região do seu dispositivo: **NosyAPI** (Turquia), o banco de dados **U.S. FDA openFDA** (Estados Unidos) ou **AEMPS CIMA** (Espanha). Nenhuma informação pessoal (seu nome, dados de perfil, dados de saúde, fotos ou imagens da câmera) é incluída nessa consulta — apenas o código escaneado ou o termo de pesquisa é transmitido. Este recurso é opcional; se você não o utilizar, nenhum dado é enviado.
 
 Você pode revogar as permissões a qualquer momento em iOS *Ajustes &gt; MedTime*.
+
+### 3.5 Apple Saúde (HealthKit) — Escrita opcional
+Usuários Premium podem ativar *Ajustes → Salvar no Apple Saúde* para que as medições de **pressão arterial, glicemia e pulso** inseridas no app **também sejam gravadas** no app Saúde da Apple. Este recurso é **totalmente opcional** e vem **desativado por padrão**.
+
+- O İlaçVakti **nunca lê** seus dados do Saúde; o acesso é **somente de escrita** e aprovado explicitamente pela tela de permissão do iOS.
+- Apenas medições do **seu próprio perfil** são gravadas; perfis de familiares nunca são sincronizados.
+- Os dados vão diretamente para o armazenamento do Saúde no seu aparelho; **nada é enviado a servidores**. Seus dados do Saúde são criptografados pela Apple.
+- Se você excluir ou editar uma medição no app, a cópia gravada no Saúde é atualizada/removida.
+- Você pode revogar o acesso a qualquer momento em iOS *Ajustes → Saúde → Acesso a Dados e Dispositivos → İlaçVakti*.
+- Dados de saúde nunca são usados para publicidade, marketing ou análises (conforme a Diretriz 5.1.3 da App Store).
 
 ---
 

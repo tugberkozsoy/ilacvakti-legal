@@ -6,7 +6,7 @@ permalink: /privacy-de/
 
 # MedTime (İlaçVakti) — Datenschutzerklärung
 
-**Zuletzt aktualisiert:** 17. Mai 2026
+**Zuletzt aktualisiert:** 14. Juli 2026
 
 MedTime (İlaçVakti) ist eine mobile Anwendung, die von dem Apotheker **Mehmet Tuğberk Özsoy** entwickelt wurde und Nutzerinnen und Nutzer dabei unterstützt, ihre Medikamente im Blick zu behalten. Der Schutz Ihrer Privatsphäre hat für uns höchste Priorität; diese Erklärung legt transparent dar, welche Daten verarbeitet werden und auf welche Weise.
 
@@ -24,7 +24,7 @@ Detaillierte Liste der nicht erhobenen Daten:
 - ❌ Standortdaten
 - ❌ Kontakte, Kalender, Mikrofon
 - ❌ Kontoerstellung, E-Mail, Telefon
-- ❌ Apple-Health-Daten
+- ❌ Apple-Health-Daten werden **niemals gelesen** (optionale Nur-Schreiben-Synchronisierung: siehe 3.5)
 
 ---
 
@@ -59,6 +59,16 @@ Ein optionaler Zugriff auf die Fotomediathek wird angefragt, wenn Sie Medikament
 Wenn Sie einen Barcode/QR-Code auf einer Medikamentenschachtel scannen oder ein Medikament nach Namen suchen, wird ausschließlich dieser **Barcode bzw. Produktcode oder der Medikamentenname** an einen offiziellen Medikamentendatenbankdienst gesendet, um den Medikamentennamen und weitere Details (Beipackzettel, Verpackung, Verfallsdatum usw.) abzurufen. Welcher Dienst verwendet wird, hängt von der Region Ihres Geräts ab: **NosyAPI** (Türkei), die **U.S. FDA openFDA**-Datenbank (Vereinigte Staaten) oder **AEMPS CIMA** (Spanien). In dieser Abfrage sind keinerlei personenbezogene Daten (Ihr Name, Profildaten, Gesundheitsdaten, Fotos oder Kameraaufnahmen) enthalten – übertragen wird ausschließlich der gescannte Code oder der Suchbegriff. Diese Funktion ist optional; wenn Sie sie nicht nutzen, werden keine Daten gesendet.
 
 Sie können erteilte Berechtigungen jederzeit über die iOS-*Einstellungen &gt; MedTime* widerrufen.
+
+### 3.5 Apple Health (HealthKit) — Optionales Schreiben
+Premium-Nutzer können optional *Einstellungen → In Apple Health speichern* aktivieren, damit die in der App erfassten **Blutdruck-, Blutzucker- und Pulswerte** zusätzlich in die Apple-Health-App **geschrieben** werden. Diese Funktion ist **völlig optional** und standardmäßig **deaktiviert**.
+
+- İlaçVakti **liest niemals** Ihre Health-Daten; der Zugriff erfolgt **nur schreibend** und wird über den iOS-Berechtigungsdialog ausdrücklich genehmigt.
+- Es werden nur Messwerte **Ihres eigenen Profils** geschrieben; Profile von Familienmitgliedern werden nie synchronisiert.
+- Die Daten gehen direkt in den Health-Speicher Ihres Geräts; **nichts wird an einen Server gesendet**. Ihre Health-Daten werden von Apple verschlüsselt.
+- Wenn Sie eine Messung in der App löschen oder bearbeiten, wird die in Health geschriebene Kopie entsprechend aktualisiert/entfernt.
+- Sie können den Zugriff jederzeit unter iOS *Einstellungen → Health → Datenzugriff & Geräte → İlaçVakti* widerrufen.
+- Gesundheitsdaten werden niemals für Werbung, Marketing oder Analysen verwendet (konform mit App-Store-Richtlinie 5.1.3).
 
 ---
 
