@@ -6,7 +6,7 @@ permalink: /privacy-pt/
 
 # MedTime (İlaçVakti) — Política de Privacidade
 
-**Última atualização:** 14 de julho de 2026
+**Última atualização:** 2 de agosto de 2026
 
 O MedTime (İlaçVakti) é um aplicativo móvel desenvolvido pelo Farmacêutico **Mehmet Tuğberk Özsoy**, projetado para ajudar os usuários a controlar seus medicamentos. Sua privacidade é nossa prioridade máxima; esta política explica de forma transparente quais dados são tratados e como.
 
@@ -22,7 +22,8 @@ Lista detalhada dos dados não coletados:
 - ❌ Rastreamento para publicidade ou análise
 - ❌ Serviços de análise de terceiros (Google Analytics, Facebook Pixel, etc.)
 - ❌ Dados de localização
-- ❌ Contatos, calendário, microfone
+- ❌ Contatos, calendário
+- ❌ Armazenamento de gravações de áudio (o microfone só é ativado para a entrada por voz opcional, ver 3.6)
 - ❌ Criação de conta, e-mail, telefone
 - ❌ Os dados do Apple Saúde **nunca são lidos** (para a sincronização opcional somente-escrita, veja 3.5)
 
@@ -69,6 +70,15 @@ Usuários Premium podem ativar *Ajustes → Salvar no Apple Saúde* para que as 
 - Se você excluir ou editar uma medição no app, a cópia gravada no Saúde é atualizada/removida.
 - Você pode revogar o acesso a qualquer momento em iOS *Ajustes → Saúde → Acesso a Dados e Dispositivos → İlaçVakti*.
 - Dados de saúde nunca são usados para publicidade, marketing ou análises (conforme a Diretriz 5.1.3 da App Store).
+
+### 3.6 Microfone e reconhecimento de fala — Opcional
+Ao tocar no ícone do microfone na tela de medições, você pode inserir sua pressão ou glicemia **falando**. Este recurso é **totalmente opcional**; o microfone nunca é ativado se você não tocar nesse ícone.
+
+- Sua fala é transcrita **no seu dispositivo**; o aplicativo **exige** o reconhecimento de fala no próprio dispositivo do iOS. **Nenhum áudio é enviado a qualquer servidor** — o recurso funciona também em modo avião.
+- **Nenhuma gravação de áudio é mantida.** Depois que a fala é transcrita, os dados de áudio não são armazenados; apenas os números reconhecidos são escritos nos campos da tela.
+- O valor reconhecido **não é salvo diretamente**: ele é escrito no campo e só é registrado quando você o confere e toca em **Salvar**.
+- O microfone fica ativo apenas nesta tela e somente quando você o inicia; não há escuta em segundo plano.
+- Você pode revogar a permissão a qualquer momento em iOS *Ajustes &gt; MedTime*.
 
 ---
 

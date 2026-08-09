@@ -6,7 +6,7 @@ permalink: /privacy-tr/
 
 # İlaçVakti — Gizlilik Politikası
 
-**Son güncelleme:** 14 Temmuz 2026
+**Son güncelleme:** 2 Ağustos 2026
 
 İlaçVakti, Eczacı **Mehmet Tuğberk Özsoy** tarafından geliştirilen, kullanıcıların ilaç takibini kolaylaştıran bir mobil uygulamadır. Kullanıcılarımızın gizliliği temel önceliğimizdir; bu politika hangi verilerin nasıl işlendiğini şeffafça açıklar.
 
@@ -22,7 +22,8 @@ Toplanmayan veriler ayrıntılı liste:
 - ❌ Reklam veya analitik takibi
 - ❌ Üçüncü taraf analytics servisleri (Google Analytics, Facebook Pixel vb.)
 - ❌ Konum bilgisi
-- ❌ Kişi listesi, takvim, mikrofon
+- ❌ Kişi listesi, takvim
+- ❌ Ses kaydı saklama (mikrofon yalnız isteğe bağlı sesli girişte açılır, bkz. 3.6)
 - ❌ Hesap oluşturma, e-posta, telefon
 - ❌ Apple Health verisi **okunmaz** (isteğe bağlı, yalnız-yazma senkron için bkz. 3.5)
 
@@ -69,6 +70,15 @@ Premium kullanıcılar dilerse *Ayarlar → Apple Health'e kaydet* seçeneğini 
 - Uygulamada bir ölçümü siler veya düzenlerseniz, Health'e yazılmış kopyası da güncellenir/silinir.
 - İzni istediğiniz zaman iOS *Ayarlar → Sağlık → Veri Erişimi ve Aygıtlar → İlaçVakti* üzerinden geri alabilirsiniz.
 - Sağlık verileri hiçbir koşulda reklam, pazarlama veya analitik amaçla kullanılmaz (Apple App Store Kural 5.1.3 uyumlu).
+
+### 3.6 Mikrofon ve Konuşma Tanıma — İsteğe Bağlı
+Ölçüm ekleme ekranındaki mikrofon simgesine dokunduğunuzda tansiyon veya kan şekeri değerinizi **konuşarak** girebilirsiniz. Bu özellik **tamamen isteğe bağlıdır**; simgeye dokunmadığınız sürece mikrofon hiçbir zaman açılmaz.
+
+- Konuşmanız **cihazınızın üzerinde** yazıya çevrilir; uygulama iOS'un cihaz-üstü konuşma tanımasını **zorunlu** kılar. **Ses hiçbir sunucuya gönderilmez** — özellik uçak modunda da çalışır.
+- **Ses kaydı tutulmaz.** Konuşma yazıya çevrildikten sonra ses verisi saklanmaz; yalnızca tanınan sayılar ekrandaki alanlara yazılır.
+- Tanınan değer **doğrudan kaydedilmez**: alana yazılır ve siz görüp **Kaydet**'e basana kadar kayda geçmez.
+- Mikrofon yalnız bu ekranda ve yalnız siz başlattığınızda etkinleşir; arka planda dinleme yapılmaz.
+- İzni istediğiniz zaman iOS *Ayarlar &gt; İlaçVakti* üzerinden geri alabilirsiniz.
 
 ---
 

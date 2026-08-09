@@ -6,7 +6,7 @@ permalink: /privacy-de/
 
 # MedTime (İlaçVakti) — Datenschutzerklärung
 
-**Zuletzt aktualisiert:** 14. Juli 2026
+**Zuletzt aktualisiert:** 2. August 2026
 
 MedTime (İlaçVakti) ist eine mobile Anwendung, die von dem Apotheker **Mehmet Tuğberk Özsoy** entwickelt wurde und Nutzerinnen und Nutzer dabei unterstützt, ihre Medikamente im Blick zu behalten. Der Schutz Ihrer Privatsphäre hat für uns höchste Priorität; diese Erklärung legt transparent dar, welche Daten verarbeitet werden und auf welche Weise.
 
@@ -22,7 +22,8 @@ Detaillierte Liste der nicht erhobenen Daten:
 - ❌ Werbe- oder Analyse-Tracking
 - ❌ Analysedienste von Drittanbietern (Google Analytics, Facebook Pixel usw.)
 - ❌ Standortdaten
-- ❌ Kontakte, Kalender, Mikrofon
+- ❌ Kontakte, Kalender
+- ❌ Speicherung von Audioaufnahmen (das Mikrofon wird nur für die optionale Spracheingabe aktiviert, siehe 3.6)
 - ❌ Kontoerstellung, E-Mail, Telefon
 - ❌ Apple-Health-Daten werden **niemals gelesen** (optionale Nur-Schreiben-Synchronisierung: siehe 3.5)
 
@@ -69,6 +70,15 @@ Premium-Nutzer können optional *Einstellungen → In Apple Health speichern* ak
 - Wenn Sie eine Messung in der App löschen oder bearbeiten, wird die in Health geschriebene Kopie entsprechend aktualisiert/entfernt.
 - Sie können den Zugriff jederzeit unter iOS *Einstellungen → Health → Datenzugriff & Geräte → İlaçVakti* widerrufen.
 - Gesundheitsdaten werden niemals für Werbung, Marketing oder Analysen verwendet (konform mit App-Store-Richtlinie 5.1.3).
+
+### 3.6 Mikrofon und Spracherkennung — Optional
+Wenn Sie im Messungs-Bildschirm auf das Mikrofonsymbol tippen, können Sie Ihren Blutdruck oder Blutzucker **per Sprache** eingeben. Diese Funktion ist **vollständig optional**; das Mikrofon wird nur aktiviert, wenn Sie dieses Symbol antippen.
+
+- Ihre Sprache wird **auf Ihrem Gerät** in Text umgewandelt; die App **erzwingt** die geräteinterne Spracherkennung von iOS. **Es werden keine Audiodaten an einen Server gesendet** — die Funktion arbeitet auch im Flugmodus.
+- **Es wird keine Audioaufnahme gespeichert.** Nach der Umwandlung in Text werden die Audiodaten nicht aufbewahrt; nur die erkannten Zahlen werden in die Felder auf dem Bildschirm eingetragen.
+- Der erkannte Wert wird **nicht direkt gespeichert**: Er wird in das Feld eingetragen und erst erfasst, wenn Sie ihn prüfen und auf **Speichern** tippen.
+- Das Mikrofon ist nur auf diesem Bildschirm und nur nach Ihrem Start aktiv; es findet kein Mithören im Hintergrund statt.
+- Sie können die Berechtigung jederzeit über iOS *Einstellungen &gt; MedTime* widerrufen.
 
 ---
 

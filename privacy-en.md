@@ -6,7 +6,7 @@ permalink: /privacy-en/
 
 # MedTime (İlaçVakti) — Privacy Policy
 
-**Last updated:** July 14, 2026
+**Last updated:** August 2, 2026
 
 MedTime (İlaçVakti) is a mobile application developed by Pharmacist **Mehmet Tuğberk Özsoy**, designed to help users track their medications. Your privacy is our top priority; this policy transparently explains what data is processed and how.
 
@@ -22,7 +22,8 @@ Detailed list of data not collected:
 - ❌ Advertising or analytics tracking
 - ❌ Third-party analytics services (Google Analytics, Facebook Pixel, etc.)
 - ❌ Location data
-- ❌ Contacts, calendar, microphone
+- ❌ Contacts, calendar
+- ❌ Storing audio recordings (the microphone is only activated for optional voice entry, see 3.6)
 - ❌ Account creation, email, phone
 - ❌ Apple Health data is **never read** (for the optional write-only sync, see 3.5)
 
@@ -69,6 +70,15 @@ Premium users can optionally enable *Settings → Save to Apple Health* so that 
 - If you delete or edit a measurement in the app, its copy written to Health is updated/removed accordingly.
 - You can revoke access anytime via iOS *Settings → Health → Data Access & Devices → İlaçVakti*.
 - Health data is never used for advertising, marketing or analytics (compliant with App Store Guideline 5.1.3).
+
+### 3.6 Microphone and Speech Recognition — Optional
+Tapping the microphone icon on the measurement screen lets you enter your blood pressure or blood sugar **by speaking**. This feature is **entirely optional**; the microphone is never activated unless you tap that icon.
+
+- Your speech is transcribed **on your device**; the app **requires** iOS on-device speech recognition. **No audio is sent to any server** — the feature works in airplane mode.
+- **No audio recording is kept.** Once your speech is transcribed, the audio is not stored; only the recognised numbers are written into the on-screen fields.
+- The recognised value is **not saved directly**: it is written into the field and is not recorded until you review it and tap **Save**.
+- The microphone is active only on this screen and only when you start it; there is no background listening.
+- You can revoke the permission at any time via iOS *Settings &gt; MedTime*.
 
 ---
 

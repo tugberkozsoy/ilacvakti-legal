@@ -6,7 +6,7 @@ permalink: /privacy-it/
 
 # MedTime (İlaçVakti) — Informativa sulla Privacy
 
-**Ultimo aggiornamento:** 14 luglio 2026
+**Ultimo aggiornamento:** 2 agosto 2026
 
 MedTime (İlaçVakti) è un'applicazione mobile sviluppata dal Farmacista **Mehmet Tuğberk Özsoy**, progettata per aiutare gli utenti a tenere traccia dei propri farmaci. La vostra privacy è la nostra massima priorità; la presente informativa illustra in modo trasparente quali dati vengono trattati e con quali modalità.
 
@@ -22,7 +22,8 @@ Elenco dettagliato dei dati non raccolti:
 - ❌ Tracciamento pubblicitario o analitico
 - ❌ Servizi di analisi di terze parti (Google Analytics, Facebook Pixel, ecc.)
 - ❌ Dati di localizzazione
-- ❌ Contatti, calendario, microfono
+- ❌ Contatti, calendario
+- ❌ Conservazione di registrazioni audio (il microfono si attiva solo per l'inserimento vocale facoltativo, vedi 3.6)
 - ❌ Creazione di account, e-mail, telefono
 - ❌ I dati di Apple Salute non vengono **mai letti** (per la sincronizzazione opzionale di sola scrittura, vedi 3.5)
 
@@ -69,6 +70,15 @@ Gli utenti Premium possono attivare *Impostazioni → Salva in Apple Salute* aff
 - Se elimini o modifichi una misurazione nell'app, la copia scritta in Salute viene aggiornata/rimossa di conseguenza.
 - Puoi revocare l'accesso in qualsiasi momento da iOS *Impostazioni → Salute → Accesso ai dati e dispositivi → İlaçVakti*.
 - I dati sanitari non vengono mai usati per pubblicità, marketing o analisi (conforme alla Regola 5.1.3 dell'App Store).
+
+### 3.6 Microfono e riconoscimento vocale — Facoltativo
+Toccando l'icona del microfono nella schermata delle misurazioni puoi inserire la pressione o la glicemia **parlando**. Questa funzione è **del tutto facoltativa**; il microfono non si attiva mai se non tocchi quell'icona.
+
+- La tua voce viene trascritta **sul tuo dispositivo**; l'app **impone** il riconoscimento vocale on-device di iOS. **Nessun audio viene inviato ad alcun server**: la funzione opera anche in modalità aereo.
+- **Nessuna registrazione audio viene conservata.** Una volta trascritto il parlato, i dati audio non vengono memorizzati; solo i numeri riconosciuti vengono scritti nei campi a schermo.
+- Il valore riconosciuto **non viene salvato direttamente**: viene scritto nel campo e non viene registrato finché non lo controlli e tocchi **Salva**.
+- Il microfono è attivo solo in questa schermata e solo quando lo avvii tu; non c'è alcun ascolto in background.
+- Puoi revocare l'autorizzazione in qualsiasi momento da iOS *Impostazioni &gt; MedTime*.
 
 ---
 
