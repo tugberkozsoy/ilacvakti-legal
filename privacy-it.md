@@ -6,7 +6,7 @@ permalink: /privacy-it/
 
 # MedTime (İlaçVakti) — Informativa sulla Privacy
 
-**Ultimo aggiornamento:** 2 agosto 2026
+**Ultimo aggiornamento:** 19 agosto 2026
 
 MedTime (İlaçVakti) è un'applicazione mobile sviluppata dal Farmacista **Mehmet Tuğberk Özsoy**, progettata per aiutare gli utenti a tenere traccia dei propri farmaci. La vostra privacy è la nostra massima priorità; la presente informativa illustra in modo trasparente quali dati vengono trattati e con quali modalità.
 
@@ -19,7 +19,7 @@ Altre lingue: [English](/ilacvakti-legal/privacy-en/) · [Türkçe](/ilacvakti-l
 MedTime **non** raccoglie identificatori personali (nome, e-mail, telefono, codice identificativo, data di nascita, ecc.) dagli utenti, non li invia ai nostri server e non li condivide con terze parti. Non è richiesta la creazione di un account; l'app funziona interamente in modo **anonimo**.
 
 Elenco dettagliato dei dati non raccolti:
-- ❌ Tracciamento pubblicitario o analitico
+- ❌ Reti pubblicitarie, profilazione o tracciamento tra applicazioni (per la misurazione degli annunci sull'App Store, vedere la Sezione 5)
 - ❌ Servizi di analisi di terze parti (Google Analytics, Facebook Pixel, ecc.)
 - ❌ Dati di localizzazione
 - ❌ Contatti, calendario
@@ -108,8 +108,11 @@ MedTime offre un **abbonamento Premium** facoltativo:
 
 | Piano | Prezzo | Funzionalità |
 |---|---|---|
-| Mensile | circa $0,99 | Si rinnova automaticamente |
-| Annuale | circa $5,99 | Include **7 giorni di prova gratuita**, si rinnova automaticamente |
+| Mensile | 3,99 € | Si rinnova automaticamente |
+| Annuale | 29,99 € | Include **7 giorni di prova gratuita**, si rinnova automaticamente |
+| A vita | 49,99 € | **Pagamento una tantum**: non è un abbonamento e non si rinnova |
+
+> Gli importi indicati si riferiscono all'App Store dell'area euro (in CHF per la Svizzera). **I prezzi variano in base al Paese**; l'App Store mostra l'importo esatto nella vostra valuta locale prima di completare l'acquisto.
 
 ### Gestione dell'Abbonamento
 - Gli abbonamenti si rinnovano automaticamente; il pagamento viene addebitato sul vostro account iTunes se non viene annullato almeno **24 ore** prima del termine del periodo in corso.
@@ -125,6 +128,14 @@ Il servizio **RevenueCat** è utilizzato per convalidare lo stato dell'abbonamen
 
 Informativa sulla privacy di RevenueCat: <https://www.revenuecat.com/privacy/>
 
+### Misurazione Pubblicitaria (Apple Search Ads)
+MedTime pubblica occasionalmente annunci sull'App Store. Per misurare quale annuncio vi ha portato all'applicazione, un *token di attribuzione* generato da Apple **al momento dell'installazione** viene trasmesso a RevenueCat, che chiede ad Apple se l'installazione proviene da un annuncio.
+
+- Il token **non è il vostro identificativo pubblicitario (IDFA)** e non identifica né voi né il vostro dispositivo. Per questo motivo la schermata iOS di *Trasparenza del tracciamento delle app* non viene mostrata: non viene effettuato alcun tracciamento tra applicazioni.
+- Apple restituisce esclusivamente informazioni **a livello di campagna**. Tali informazioni non vengono **mai collegate** al vostro nome, al vostro profilo, ai vostri farmaci o ai vostri dati sanitari.
+- L'operazione avviene **una sola volta, all'installazione**; in seguito il vostro utilizzo dell'applicazione non viene tracciato a fini pubblicitari.
+- L'unico scopo è verificare che il budget pubblicitario sia speso bene; **non** viene utilizzato per indirizzarvi annunci né per vendere dati.
+
 ### Termini di Utilizzo
 Si applica il Contratto di Licenza con l'Utente Finale (EULA) Standard di Apple: <https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>
 
@@ -136,7 +147,7 @@ MedTime **non condivide i dati degli utenti con alcuna terza parte, non li vende
 
 - Le ricerche nel database dei farmaci descritte nella Sezione 3.4 (NosyAPI / U.S. FDA openFDA / AEMPS CIMA) — viene trasmesso unicamente il codice scansionato o il nome del farmaco cercato; non contiene alcun dato personale.
 - Le segnalazioni anonime di arresto anomalo descritte nella Sezione 4 (Sentry).
-- I dati anonimi di convalida dell'abbonamento descritti nella Sezione 5 (RevenueCat + Apple).
+- I dati anonimi di convalida dell'abbonamento e il token di attribuzione pubblicitaria non identificante descritti nella Sezione 5 (RevenueCat + Apple).
 
 ---
 

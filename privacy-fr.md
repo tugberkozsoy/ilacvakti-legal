@@ -6,7 +6,7 @@ permalink: /privacy-fr/
 
 # MedTime (İlaçVakti) — Politique de Confidentialité
 
-**Dernière mise à jour :** 2 août 2026
+**Dernière mise à jour :** 19 août 2026
 
 MedTime (İlaçVakti) est une application mobile développée par le Pharmacien **Mehmet Tuğberk Özsoy**, conçue pour aider les utilisateurs à suivre leurs médicaments. Votre vie privée est notre priorité absolue ; cette politique explique de manière transparente quelles données sont traitées et de quelle façon.
 
@@ -19,7 +19,7 @@ Autres langues : [English](/ilacvakti-legal/privacy-en/) · [Türkçe](/ilacvakt
 MedTime ne collecte **pas** d'identifiants personnels (nom, e-mail, téléphone, numéro d'identité, date de naissance, etc.) auprès des utilisateurs, ne les envoie pas à nos serveurs et ne les partage pas avec des tiers. Aucune création de compte n'est requise ; l'application fonctionne entièrement de manière **anonyme**.
 
 Liste détaillée des données non collectées :
-- ❌ Suivi publicitaire ou analytique
+- ❌ Régies publicitaires, profilage ou suivi inter-applications (pour la mesure publicitaire sur l'App Store, voir la Section 5)
 - ❌ Services d'analyse tiers (Google Analytics, Facebook Pixel, etc.)
 - ❌ Données de localisation
 - ❌ Contacts, calendrier
@@ -108,8 +108,11 @@ MedTime propose un **abonnement Premium** facultatif :
 
 | Formule | Prix | Fonctionnalités |
 |---|---|---|
-| Mensuel | environ 0,99 $ | Renouvellement automatique |
-| Annuel | environ 5,99 $ | Inclut un **essai gratuit de 7 jours**, renouvellement automatique |
+| Mensuel | 3,99 € | Renouvellement automatique |
+| Annuel | 29,99 € | Inclut un **essai gratuit de 7 jours**, renouvellement automatique |
+| À vie | 49,99 € | **Paiement unique** — il ne s'agit pas d'un abonnement, aucun renouvellement |
+
+> Les montants ci-dessus correspondent à l'App Store de la zone euro (en CHF pour la Suisse). **Les prix varient selon le pays** ; l'App Store affiche le montant exact dans votre devise locale avant la validation de l'achat.
 
 ### Gestion de l'Abonnement
 - Les abonnements se renouvellent automatiquement ; le paiement est prélevé sur votre compte iTunes s'il n'est pas annulé au moins **24 heures** avant la fin de la période en cours.
@@ -125,6 +128,14 @@ Le service **RevenueCat** est utilisé pour valider l'état de l'abonnement. Un 
 
 Politique de confidentialité de RevenueCat : <https://www.revenuecat.com/privacy/>
 
+### Mesure Publicitaire (Apple Search Ads)
+MedTime diffuse occasionnellement des annonces sur l'App Store. Afin de mesurer quelle annonce vous a amené vers l'application, un *jeton d'attribution* généré par Apple **au moment de l'installation** est transmis à RevenueCat, qui interroge Apple pour savoir si l'installation provient d'une annonce.
+
+- Ce jeton **n'est pas votre identifiant publicitaire (IDFA)** et ne vous identifie ni vous ni votre appareil. C'est pourquoi l'écran iOS de *Transparence du suivi des apps* n'est pas affiché : aucun suivi inter-applications n'est effectué.
+- Apple ne renvoie que des informations **au niveau de la campagne**. Elles ne sont **jamais associées** à votre nom, votre profil, vos médicaments ou vos données de santé.
+- L'opération n'a lieu **qu'une seule fois, à l'installation** ; votre utilisation de l'application n'est ensuite pas suivie à des fins publicitaires.
+- Son unique finalité est de vérifier que le budget publicitaire est bien employé ; elle n'est **pas** utilisée pour vous cibler ni pour vendre des données.
+
 ### Conditions d'Utilisation
 Le CLUF standard d'Apple s'applique : <https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>
 
@@ -136,7 +147,7 @@ MedTime ne **partage pas les données des utilisateurs avec un tiers, ne les ven
 
 - Les consultations de la base de données de médicaments décrites dans la Section 3.4 (NosyAPI / U.S. FDA openFDA / AEMPS CIMA) — seul le code scanné ou le nom du médicament recherché est transmis ; il ne contient aucune donnée personnelle.
 - Les rapports de plantage anonymes décrits dans la Section 4 (Sentry).
-- Les données anonymes de validation d'abonnement décrites dans la Section 5 (RevenueCat + Apple).
+- Les données anonymes de validation d'abonnement ainsi que le jeton d'attribution publicitaire non identifiant décrits dans la Section 5 (RevenueCat + Apple).
 
 ---
 

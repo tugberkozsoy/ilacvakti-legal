@@ -6,7 +6,7 @@ permalink: /privacy-es/
 
 # MedTime (İlaçVakti) — Política de Privacidad
 
-**Última actualización:** 2 de agosto de 2026
+**Última actualización:** 19 de agosto de 2026
 
 MedTime (İlaçVakti) es una aplicación móvil desarrollada por el Farmacéutico **Mehmet Tuğberk Özsoy**, diseñada para ayudar a los usuarios a hacer un seguimiento de sus medicamentos. Su privacidad es nuestra máxima prioridad; esta política explica de forma transparente qué datos se tratan y cómo.
 
@@ -19,7 +19,7 @@ Otros idiomas: [English](/ilacvakti-legal/privacy-en/) · [Türkçe](/ilacvakti-
 MedTime **no** recopila identificadores personales (nombre, correo electrónico, teléfono, número de identificación, fecha de nacimiento, etc.) de los usuarios, no los envía a nuestros servidores y no los comparte con terceros. No se requiere la creación de una cuenta; la aplicación funciona de forma totalmente **anónima**.
 
 Lista detallada de los datos que no se recopilan:
-- ❌ Seguimiento publicitario o analítico
+- ❌ Redes publicitarias, perfilado o seguimiento entre aplicaciones (para la medición de anuncios en la App Store, véase la Sección 5)
 - ❌ Servicios de análisis de terceros (Google Analytics, Facebook Pixel, etc.)
 - ❌ Datos de ubicación
 - ❌ Contactos, calendario
@@ -108,8 +108,11 @@ MedTime ofrece una **suscripción Premium** opcional:
 
 | Plan | Precio | Funciones |
 |---|---|---|
-| Mensual | aprox. $0.99 | Se renueva automáticamente |
-| Anual | aprox. $5.99 | Incluye una **prueba gratuita de 7 días**, se renueva automáticamente |
+| Mensual | 3,99 € | Se renueva automáticamente |
+| Anual | 29,99 € | Incluye una **prueba gratuita de 7 días**, se renueva automáticamente |
+| De por vida | 49,99 € | **Pago único**: no es una suscripción y no se renueva |
+
+> Los importes anteriores corresponden a la App Store de España. **Los precios varían según el país** (en Latinoamérica, por ejemplo, se facturan en dólares estadounidenses); la App Store muestra el importe exacto en su moneda local antes de completar la compra.
 
 ### Gestión de la suscripción
 - Las suscripciones se renuevan automáticamente; el pago se cargará a su cuenta de iTunes si no se cancela al menos **24 horas** antes del final del período en curso.
@@ -125,6 +128,14 @@ El servicio **RevenueCat** se utiliza para validar el estado de la suscripción.
 
 Política de privacidad de RevenueCat: <https://www.revenuecat.com/privacy/>
 
+### Medición Publicitaria (Apple Search Ads)
+MedTime publica ocasionalmente anuncios en la App Store. Para medir qué anuncio le trajo a la aplicación, un *token de atribución* generado por Apple **en el momento de la instalación** se envía a RevenueCat, que consulta a Apple si la instalación procede de un anuncio.
+
+- El token **no es su identificador publicitario (IDFA)** y no le identifica a usted ni a su dispositivo. Por ello no se muestra la pantalla de *Transparencia en el Seguimiento de Apps* de iOS: no se realiza ningún seguimiento entre aplicaciones.
+- Apple devuelve únicamente información **a nivel de campaña**. Esa información **no se vincula** con su nombre, su perfil, sus medicamentos ni sus datos de salud.
+- Se ejecuta **una sola vez, en la instalación**; después su uso de la aplicación no se rastrea con fines publicitarios.
+- Su única finalidad es comprobar que el presupuesto publicitario se emplea bien; **no** se utiliza para dirigirle anuncios ni para vender datos.
+
 ### Condiciones de uso
 Se aplica el EULA estándar de Apple: <https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>
 
@@ -136,7 +147,7 @@ MedTime **no comparte los datos de los usuarios con ningún tercero, no los vend
 
 - Las búsquedas en la base de datos de medicamentos descritas en la Sección 3.4 (NosyAPI / openFDA de la FDA de EE. UU. / AEMPS CIMA): solo se transmite el código escaneado o el nombre del medicamento buscado; no contiene ningún dato personal.
 - Los informes de fallos anónimos descritos en la Sección 4 (Sentry).
-- Los datos anónimos de validación de la suscripción descritos en la Sección 5 (RevenueCat + Apple).
+- Los datos anónimos de validación de la suscripción y el token de atribución publicitaria sin identificación descritos en la Sección 5 (RevenueCat + Apple).
 
 ---
 

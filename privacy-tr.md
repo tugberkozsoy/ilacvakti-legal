@@ -6,7 +6,7 @@ permalink: /privacy-tr/
 
 # İlaçVakti — Gizlilik Politikası
 
-**Son güncelleme:** 2 Ağustos 2026
+**Son güncelleme:** 19 Ağustos 2026
 
 İlaçVakti, Eczacı **Mehmet Tuğberk Özsoy** tarafından geliştirilen, kullanıcıların ilaç takibini kolaylaştıran bir mobil uygulamadır. Kullanıcılarımızın gizliliği temel önceliğimizdir; bu politika hangi verilerin nasıl işlendiğini şeffafça açıklar.
 
@@ -19,7 +19,7 @@ permalink: /privacy-tr/
 İlaçVakti kullanıcılarından kişisel kimlik bilgisi (ad, e-posta, telefon, kimlik no, doğum tarihi vb.) **toplamaz**, kendi sunucularına göndermez ve üçüncü taraflarla paylaşmaz. Hesap oluşturma gerektirmez; uygulama tamamen **anonim** çalışır.
 
 Toplanmayan veriler ayrıntılı liste:
-- ❌ Reklam veya analitik takibi
+- ❌ Reklam ağları, profilleme veya uygulamalar arası takip (App Store reklam ölçümü için bkz. Bölüm 5)
 - ❌ Üçüncü taraf analytics servisleri (Google Analytics, Facebook Pixel vb.)
 - ❌ Konum bilgisi
 - ❌ Kişi listesi, takvim
@@ -108,8 +108,11 @@ Sentry gizlilik politikası: <https://sentry.io/privacy/>
 
 | Plan | Fiyat | Özellik |
 |---|---|---|
-| Aylık | yaklaşık ₺49,99 ($0.99) | Otomatik yenilenir |
-| Yıllık | yaklaşık ₺299,99 ($5.99) | **7 gün ücretsiz deneme** dahil, otomatik yenilenir |
+| Aylık | ₺79,99 | Otomatik yenilenir |
+| Yıllık | ₺499,99 | **7 gün ücretsiz deneme** dahil, otomatik yenilenir |
+| Ömür Boyu | ₺999,99 | **Tek seferlik ödeme** — abonelik değildir, yenilenmez |
+
+> Yukarıdaki tutarlar Türkiye App Store fiyatlarıdır. **Fiyatlar ülkeye göre değişir**; App Store satın almadan önce kendi para biriminizdeki kesin tutarı gösterir.
 
 ### Abonelik Yönetimi
 - Abonelik otomatik yenilenir; mevcut dönem bitiminden en az **24 saat önce** iptal edilmezse ücret iTunes hesabınızdan tahsil edilir.
@@ -125,6 +128,14 @@ Abonelik durumunu doğrulamak için **RevenueCat** servisi kullanılır. Apple I
 
 RevenueCat gizlilik politikası: <https://www.revenuecat.com/privacy/>
 
+### Reklam Ölçümü (Apple Search Ads)
+İlaçVakti, App Store'da zaman zaman reklam verir. Uygulamayı hangi reklamın getirdiğini ölçebilmek için **kurulum anında** Apple'ın oluşturduğu bir *atıf jetonu* (attribution token) RevenueCat'e iletilir; RevenueCat bu jetonu Apple'a sorarak kurulumun bir reklamdan gelip gelmediğini öğrenir.
+
+- Jeton **reklam kimliğiniz (IDFA) değildir** ve sizi ya da cihazınızı tanımlamaz. Bu nedenle iOS'un *İzleme İzni* (App Tracking Transparency) ekranı gösterilmez — uygulamalar arası takip yapılmaz.
+- Apple'dan yalnızca **kampanya düzeyinde** bilgi döner. Bu bilgi adınıza, profilinize, ilaçlarınıza veya sağlık verinize **bağlanmaz**.
+- Yalnızca **kurulumda bir kez** çalışır; sonrasında uygulama kullanımınız reklam amacıyla izlenmez.
+- Amaç yalnızca reklam bütçesinin doğru kullanıldığını görmektir; size reklam hedeflemek veya veriyi satmak için **kullanılmaz**.
+
 ### Kullanım Koşulları
 Apple Standart EULA geçerlidir: <https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>
 
@@ -136,7 +147,7 @@ Apple Standart EULA geçerlidir: <https://www.apple.com/legal/internet-services/
 
 - Bölüm 3.4'te belirtilen ilaç veritabanı sorgulamaları (NosyAPI / ABD FDA openFDA / AEMPS CIMA) — yalnızca taranan kod veya aranan ilaç adı iletilir, kişisel veri içermez.
 - Bölüm 4'te belirtilen anonim çökme raporları (Sentry).
-- Bölüm 5'te belirtilen anonim abonelik doğrulama verisi (RevenueCat + Apple).
+- Bölüm 5'te belirtilen anonim abonelik doğrulama verisi ve kimlik içermeyen reklam atıf jetonu (RevenueCat + Apple).
 
 ---
 

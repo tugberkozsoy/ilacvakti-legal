@@ -6,7 +6,7 @@ permalink: /privacy-pt/
 
 # MedTime (İlaçVakti) — Política de Privacidade
 
-**Última atualização:** 2 de agosto de 2026
+**Última atualização:** 19 de agosto de 2026
 
 O MedTime (İlaçVakti) é um aplicativo móvel desenvolvido pelo Farmacêutico **Mehmet Tuğberk Özsoy**, projetado para ajudar os usuários a controlar seus medicamentos. Sua privacidade é nossa prioridade máxima; esta política explica de forma transparente quais dados são tratados e como.
 
@@ -19,7 +19,7 @@ Outros idiomas: [English](/ilacvakti-legal/privacy-en/) · [Türkçe](/ilacvakti
 O MedTime **não** coleta identificadores pessoais (nome, e-mail, telefone, número de identidade, data de nascimento, etc.) dos usuários, não os envia aos nossos servidores e não os compartilha com terceiros. Não é necessário criar conta; o aplicativo funciona inteiramente de forma **anônima**.
 
 Lista detalhada dos dados não coletados:
-- ❌ Rastreamento para publicidade ou análise
+- ❌ Redes de publicidade, criação de perfis ou rastreamento entre aplicativos (para a medição de anúncios na App Store, consulte a Seção 5)
 - ❌ Serviços de análise de terceiros (Google Analytics, Facebook Pixel, etc.)
 - ❌ Dados de localização
 - ❌ Contatos, calendário
@@ -108,8 +108,11 @@ O MedTime oferece uma **assinatura Premium** opcional:
 
 | Plano | Preço | Recursos |
 |---|---|---|
-| Mensal | aprox. $0,99 | Renovação automática |
-| Anual | aprox. $5,99 | Inclui **teste gratuito de 7 dias**, renovação automática |
+| Mensal | 3,99 € | Renovação automática |
+| Anual | 29,99 € | Inclui **teste gratuito de 7 dias**, renovação automática |
+| Vitalício | 49,99 € | **Pagamento único** — não é uma assinatura e não é renovado |
+
+> Os valores acima referem-se à App Store de Portugal. **Os preços variam conforme o país** — no Brasil, por exemplo, são R$ 6,90 / R$ 39,90 / R$ 129,90. A App Store mostra o valor exato na sua moeda local antes de concluir a compra.
 
 ### Gerenciamento da Assinatura
 - As assinaturas se renovam automaticamente; a cobrança é feita na sua conta do iTunes caso não seja cancelada com pelo menos **24 horas** de antecedência em relação ao fim do período atual.
@@ -125,6 +128,14 @@ O serviço **RevenueCat** é usado para validar o estado da assinatura. Um ident
 
 Política de privacidade do RevenueCat: <https://www.revenuecat.com/privacy/>
 
+### Medição de Publicidade (Apple Search Ads)
+O MedTime veicula ocasionalmente anúncios na App Store. Para medir qual anúncio trouxe você até o aplicativo, um *token de atribuição* gerado pela Apple **no momento da instalação** é enviado ao RevenueCat, que consulta a Apple para saber se a instalação veio de um anúncio.
+
+- O token **não é o seu identificador de publicidade (IDFA)** e não identifica você nem o seu dispositivo. Por isso a tela de *Transparência de Rastreamento de Apps* do iOS não é exibida — não há rastreamento entre aplicativos.
+- A Apple devolve apenas informações **em nível de campanha**. Essas informações **não são vinculadas** ao seu nome, ao seu perfil, aos seus medicamentos ou aos seus dados de saúde.
+- A operação ocorre **uma única vez, na instalação**; depois disso o seu uso do aplicativo não é rastreado para fins publicitários.
+- A única finalidade é verificar se o orçamento de publicidade está sendo bem empregado; **não** é usada para direcionar anúncios a você nem para vender dados.
+
 ### Termos de Uso
 Aplica-se o EULA Padrão da Apple: <https://www.apple.com/legal/internet-services/itunes/dev/stdeula/>
 
@@ -136,7 +147,7 @@ O MedTime **não compartilha os dados dos usuários com terceiros, não os vende
 
 - As consultas ao banco de dados de medicamentos descritas na Seção 3.4 (NosyAPI / U.S. FDA openFDA / AEMPS CIMA) — apenas o código escaneado ou o nome do medicamento pesquisado é transmitido; não contém nenhum dado pessoal.
 - Os relatórios anônimos de falhas descritos na Seção 4 (Sentry).
-- Os dados anônimos de validação de assinatura descritos na Seção 5 (RevenueCat + Apple).
+- Os dados anônimos de validação de assinatura e o token de atribuição de publicidade sem identificação descritos na Seção 5 (RevenueCat + Apple).
 
 ---
 
