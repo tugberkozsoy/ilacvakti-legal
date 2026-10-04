@@ -6,7 +6,7 @@ permalink: /privacy-tr/
 
 # İlaçVakti — Gizlilik Politikası
 
-**Son güncelleme:** 19 Ağustos 2026
+**Son güncelleme:** 4 Ekim 2026
 
 İlaçVakti, Eczacı **Mehmet Tuğberk Özsoy** tarafından geliştirilen, kullanıcıların ilaç takibini kolaylaştıran bir mobil uygulamadır. Kullanıcılarımızın gizliliği temel önceliğimizdir; bu politika hangi verilerin nasıl işlendiğini şeffafça açıklar.
 
@@ -25,7 +25,7 @@ Toplanmayan veriler ayrıntılı liste:
 - ❌ Kişi listesi, takvim
 - ❌ Ses kaydı saklama (mikrofon yalnız isteğe bağlı sesli girişte açılır, bkz. 3.6)
 - ❌ Hesap oluşturma, e-posta, telefon
-- ❌ Apple Health verisi **okunmaz** (isteğe bağlı, yalnız-yazma senkron için bkz. 3.5)
+- ❌ Apple Health verisi cihazınızdan **dışarı çıkmaz** (isteğe bağlı okuma/yazma senkronu cihaz içinde çalışır, bkz. 3.5)
 
 ---
 
@@ -61,10 +61,10 @@ Sadece *"İlaç Ekle"* ekranında, ilaç kutusu üzerindeki barkod/QR kodları t
 
 İzinleri iOS *Ayarlar &gt; İlaçVakti* üzerinden istediğiniz zaman iptal edebilirsiniz.
 
-### 3.5 Apple Health (HealthKit) — İsteğe Bağlı Yazma
-Premium kullanıcılar dilerse *Ayarlar → Apple Health'e kaydet* seçeneğini açarak, uygulamada girdikleri **tansiyon, kan şekeri ve nabız** ölçümlerinin Apple Sağlık (Health) uygulamasına da **yazılmasını** sağlayabilir. Bu özellik **tamamen isteğe bağlıdır** ve varsayılan olarak **kapalıdır**.
+### 3.5 Apple Health (HealthKit) — İsteğe Bağlı Senkron
+Premium kullanıcılar dilerse *Ayarlar → Apple Health* senkronunu açabilir. Açıkken: (1) uygulamada girdiğiniz **tansiyon, kan şekeri ve nabız** ölçümleri ile işaretlediğiniz **insülin dozları** Apple Sağlık'a **yazılır**; (2) tansiyon aletiniz, şeker ölçeriniz veya başka uygulamaların Apple Sağlık'a yazdığı **tansiyon, kan şekeri ve nabız** ölçümleri uygulamadaki ölçüm günlüğünüze **okunur**. Bu özellik **tamamen isteğe bağlıdır** ve varsayılan olarak **kapalıdır**.
 
-- İlaçVakti, Health verilerinizi **okumaz**; erişim yalnızca **yazma** yönündedir ve iOS'un izin ekranıyla açıkça onaylanır.
+- Okuma ve yazma izinleri iOS'un izin ekranıyla **ayrı ayrı** ve açıkça onaylanır; yalnız yukarıda sayılan veri türlerine erişilir (ilaç listesi, adım, uyku vb. **okunmaz**).
 - Yalnızca **kendi profilinize** ait ölçümler yazılır; aile üyesi profillerinin verileri yazılmaz.
 - Veriler doğrudan cihazınızdaki Health deposuna gider; **hiçbir sunucuya gönderilmez**. Health verileriniz Apple tarafından şifrelenir.
 - Uygulamada bir ölçümü siler veya düzenlerseniz, Health'e yazılmış kopyası da güncellenir/silinir.

@@ -6,7 +6,7 @@ permalink: /privacy-en/
 
 # MedTime (İlaçVakti) — Privacy Policy
 
-**Last updated:** August 19, 2026
+**Last updated:** October 4, 2026
 
 MedTime (İlaçVakti) is a mobile application developed by Pharmacist **Mehmet Tuğberk Özsoy**, designed to help users track their medications. Your privacy is our top priority; this policy transparently explains what data is processed and how.
 
@@ -25,7 +25,7 @@ Detailed list of data not collected:
 - ❌ Contacts, calendar
 - ❌ Storing audio recordings (the microphone is only activated for optional voice entry, see 3.6)
 - ❌ Account creation, email, phone
-- ❌ Apple Health data is **never read** (for the optional write-only sync, see 3.5)
+- ❌ Apple Health data **never leaves** your device (the optional read/write sync runs on-device, see 3.5)
 
 ---
 
@@ -61,10 +61,10 @@ When you scan a barcode/QR code on a medication box or search for a medicine by 
 
 You can revoke permissions anytime via iOS *Settings &gt; MedTime*.
 
-### 3.5 Apple Health (HealthKit) — Optional Write-Only Sync
-Premium users can optionally enable *Settings → Save to Apple Health* so that the **blood pressure, blood glucose and heart rate** measurements they enter in the app are **also written** to the Apple Health app. This feature is **entirely optional** and **off by default**.
+### 3.5 Apple Health (HealthKit) — Optional Sync
+Premium users can optionally turn on *Settings → Apple Health* sync. When on: (1) the **blood pressure, blood glucose and heart rate** measurements you enter in the app and the **insulin doses** you mark are **written** to Apple Health; (2) **blood pressure, blood glucose and heart rate** measurements that your monitor, glucose meter or other apps write to Apple Health are **read** into your measurement log in the app. This feature is **entirely optional** and **off by default**.
 
-- İlaçVakti **never reads** your Health data; access is **write-only** and explicitly approved through the iOS permission sheet.
+- Read and write permissions are approved **separately** and explicitly through the iOS permission sheet; only the data types listed above are accessed (medication lists, steps, sleep etc. are **not read**).
 - Only measurements belonging to **your own profile** are written; family member profiles are never synced.
 - Data goes directly into the Health store on your device; **nothing is sent to any server**. Your Health data is encrypted by Apple.
 - If you delete or edit a measurement in the app, its copy written to Health is updated/removed accordingly.

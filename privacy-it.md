@@ -6,7 +6,7 @@ permalink: /privacy-it/
 
 # MedTime (İlaçVakti) — Informativa sulla Privacy
 
-**Ultimo aggiornamento:** 19 agosto 2026
+**Ultimo aggiornamento:** 4 ottobre 2026
 
 MedTime (İlaçVakti) è un'applicazione mobile sviluppata dal Farmacista **Mehmet Tuğberk Özsoy**, progettata per aiutare gli utenti a tenere traccia dei propri farmaci. La vostra privacy è la nostra massima priorità; la presente informativa illustra in modo trasparente quali dati vengono trattati e con quali modalità.
 
@@ -25,7 +25,7 @@ Elenco dettagliato dei dati non raccolti:
 - ❌ Contatti, calendario
 - ❌ Conservazione di registrazioni audio (il microfono si attiva solo per l'inserimento vocale facoltativo, vedi 3.6)
 - ❌ Creazione di account, e-mail, telefono
-- ❌ I dati di Apple Salute non vengono **mai letti** (per la sincronizzazione opzionale di sola scrittura, vedi 3.5)
+- ❌ I dati di Apple Salute **non lasciano** il tuo dispositivo (la sincronizzazione opzionale di lettura/scrittura avviene sul dispositivo, vedi 3.5)
 
 ---
 
@@ -61,10 +61,10 @@ Quando scansionate un codice a barre/codice QR su una confezione di farmaci o ce
 
 Potete revocare le autorizzazioni in qualsiasi momento tramite *Impostazioni &gt; MedTime* di iOS.
 
-### 3.5 Apple Salute (HealthKit) — Scrittura opzionale
-Gli utenti Premium possono attivare *Impostazioni → Salva in Apple Salute* affinché le misurazioni di **pressione, glicemia e battito** inserite nell'app vengano **scritte anche** nell'app Salute di Apple. Questa funzione è **del tutto opzionale** e **disattivata per impostazione predefinita**.
+### 3.5 Apple Salute (HealthKit) — Sincronizzazione opzionale
+Gli utenti Premium possono attivare la sincronizzazione *Impostazioni → Apple Salute*. Quando è attiva: (1) le misurazioni di **pressione, glicemia e battito** inserite nell'app e le **dosi di insulina** che segni vengono **scritte** in Apple Salute; (2) le misurazioni di **pressione, glicemia e battito** che il tuo misuratore, glucometro o altre app scrivono in Apple Salute vengono **lette** nel diario delle misurazioni dell'app. Questa funzione è **del tutto opzionale** e **disattivata per impostazione predefinita**.
 
-- İlaçVakti non **legge mai** i tuoi dati di Salute; l'accesso è **di sola scrittura** e viene approvato esplicitamente tramite la schermata di autorizzazione di iOS.
+- I permessi di lettura e scrittura vengono concessi **separatamente** ed esplicitamente tramite la schermata di autorizzazione di iOS; si accede solo ai tipi di dati indicati (elenchi di farmaci, passi, sonno ecc. **non vengono letti**).
 - Vengono scritte solo le misurazioni del **tuo profilo**; i profili dei familiari non vengono mai sincronizzati.
 - I dati vanno direttamente nell'archivio Salute del tuo dispositivo; **nulla viene inviato a server**. I dati di Salute sono cifrati da Apple.
 - Se elimini o modifichi una misurazione nell'app, la copia scritta in Salute viene aggiornata/rimossa di conseguenza.

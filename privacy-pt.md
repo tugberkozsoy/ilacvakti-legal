@@ -6,7 +6,7 @@ permalink: /privacy-pt/
 
 # MedTime (İlaçVakti) — Política de Privacidade
 
-**Última atualização:** 19 de agosto de 2026
+**Última atualização:** 4 de outubro de 2026
 
 O MedTime (İlaçVakti) é um aplicativo móvel desenvolvido pelo Farmacêutico **Mehmet Tuğberk Özsoy**, projetado para ajudar os usuários a controlar seus medicamentos. Sua privacidade é nossa prioridade máxima; esta política explica de forma transparente quais dados são tratados e como.
 
@@ -25,7 +25,7 @@ Lista detalhada dos dados não coletados:
 - ❌ Contatos, calendário
 - ❌ Armazenamento de gravações de áudio (o microfone só é ativado para a entrada por voz opcional, ver 3.6)
 - ❌ Criação de conta, e-mail, telefone
-- ❌ Os dados do Apple Saúde **nunca são lidos** (para a sincronização opcional somente-escrita, veja 3.5)
+- ❌ Os dados do Apple Saúde **não saem** do seu aparelho (a sincronização opcional de leitura/escrita funciona no aparelho, veja 3.5)
 
 ---
 
@@ -61,10 +61,10 @@ Ao escanear o código de barras/QR na caixa de um medicamento ou pesquisar um me
 
 Você pode revogar as permissões a qualquer momento em iOS *Ajustes &gt; MedTime*.
 
-### 3.5 Apple Saúde (HealthKit) — Escrita opcional
-Usuários Premium podem ativar *Ajustes → Salvar no Apple Saúde* para que as medições de **pressão arterial, glicemia e pulso** inseridas no app **também sejam gravadas** no app Saúde da Apple. Este recurso é **totalmente opcional** e vem **desativado por padrão**.
+### 3.5 Apple Saúde (HealthKit) — Sincronização opcional
+Usuários Premium podem ativar a sincronização *Ajustes → Apple Saúde*. Quando ativa: (1) as medições de **pressão arterial, glicemia e pulso** inseridas no app e as **doses de insulina** que você marca são **gravadas** no Apple Saúde; (2) as medições de **pressão arterial, glicemia e pulso** que seu medidor, glicosímetro ou outros apps gravam no Apple Saúde são **lidas** no seu diário de medições do app. Este recurso é **totalmente opcional** e vem **desativado por padrão**.
 
-- O İlaçVakti **nunca lê** seus dados do Saúde; o acesso é **somente de escrita** e aprovado explicitamente pela tela de permissão do iOS.
+- As permissões de leitura e escrita são aprovadas **separadamente** e de forma explícita pela tela de permissão do iOS; somente os tipos de dados acima são acessados (listas de medicamentos, passos, sono etc. **não são lidos**).
 - Apenas medições do **seu próprio perfil** são gravadas; perfis de familiares nunca são sincronizados.
 - Os dados vão diretamente para o armazenamento do Saúde no seu aparelho; **nada é enviado a servidores**. Seus dados do Saúde são criptografados pela Apple.
 - Se você excluir ou editar uma medição no app, a cópia gravada no Saúde é atualizada/removida.
