@@ -26,12 +26,13 @@ Lista detallada de los datos que no se recopilan:
 - ❌ Almacenamiento de grabaciones de audio (el micrófono solo se activa para la entrada por voz opcional, véase 3.6)
 - ❌ Creación de cuenta, correo electrónico, teléfono
 - ❌ Los datos de Apple Salud **no salen** de su dispositivo (la sincronización opcional de lectura/escritura funciona en el dispositivo, ver 3.5)
+- ❌ Su copia en iCloud y los datos compartidos en familia **no llegan** al desarrollador (permanecen en sus propias cuentas de iCloud, ver 2.1 y 2.2)
 
 ---
 
 ## 2. Almacenamiento local (datos conservados en su dispositivo)
 
-Toda la información que introduzca se almacena **únicamente en la memoria interna de su dispositivo**:
+La información que introduzca se almacena **en la memoria interna de su dispositivo**; el desarrollador no tiene ningún servidor que guarde estos datos:
 
 - Nombres de medicamentos, dosis, horarios de los recordatorios
 - Nombres de perfil (los nombres que usted proporcione) y foto de perfil opcional
@@ -41,7 +42,28 @@ Toda la información que introduzca se almacena **únicamente en la memoria inte
 - Informes y notas de salud añadidos manualmente
 - Preferencias de tema, idioma, sonido de notificación y ajustes
 
-Cuando elimina la aplicación, todos estos datos se eliminan junto con su dispositivo.
+Cuando elimina la aplicación, estos datos se borran de su dispositivo. Si la copia en iCloud está activada, su copia permanece en su propia cuenta de iCloud (ver 2.1).
+
+### 2.1 Copia en iCloud (activada por defecto, se puede desactivar)
+
+Si ha iniciado sesión en iCloud en su iPhone, la aplicación guarda una vez al día una copia de sus datos en **el área privada de su propia cuenta de iCloud** (base de datos privada de Apple CloudKit). Así, sus medicamentos y su historial vuelven cuando cambia de teléfono o reinstala la aplicación.
+
+- La copia incluye medicamentos, perfiles, informes, mediciones, historial de dosis, insignias/rachas y ajustes de la aplicación. **Las fotos no se incluyen.**
+- La copia se guarda en los campos cifrados de extremo a extremo de Apple (valores cifrados de CloudKit); la clave está en su Llavero de iCloud. Las copias muy grandes (años de historial) se guardan como un archivo cifrado en iCloud; con la Protección de datos avanzada activada, este archivo también está cifrado de extremo a extremo.
+- La copia nunca llega a los servidores del desarrollador; **el desarrollador no puede acceder a ella.** Utiliza su almacenamiento de iCloud.
+- La lista de sus conexiones familiares (a quién sigue, quién ve sus dosis) se guarda de la misma forma, para que no se pierdan al cambiar de teléfono.
+- Para desactivarla: en la aplicación, Ajustes › Gestión de datos › Copia en iCloud. Para borrarla: Ajustes del iPhone › [su nombre] › iCloud › Gestionar almacenamiento de la cuenta › MedTime.
+
+### 2.2 Compartir en familia (opcional)
+
+Puede seguir los medicamentos de un ser querido desde su propio teléfono. Se empieza a compartir solo con **una acción expresa de ambas partes**: quien va a seguir envía un enlace de invitación; la persona seguida ve en su propio teléfono qué se compartirá y **toca «Aceptar».**
+
+- **Se comparte:** los datos de las fichas de medicamentos del perfil compartido (como nombre, principio activo, dosis, horarios, instrucciones y nota del medicamento), las dosis tomadas o deshechas y cuándo se marcaron, el nombre y color del perfil, y la zona horaria del dispositivo.
+- **No se comparte:** el Diario de medicación (notas de cómo se siente/efectos secundarios), mediciones de tensión y glucosa, fotos, prospectos ni otros perfiles.
+- Los datos se transfieren mediante Apple iCloud (uso compartido de CloudKit) y se guardan **en la cuenta de iCloud de quien sigue**; los nombres y datos de los medicamentos están en campos cifrados de extremo a extremo. Si una dosis no se marca en el tiempo elegido, quien sigue recibe un aviso; esto se calcula en su dispositivo.
+- **El desarrollador no puede acceder a estos datos**; no pasan por sus servidores.
+- **Para detenerlo:** la persona seguida puede detenerlo en cualquier momento desde Ajustes › Familia («… ve tus dosis»), y quien sigue desde «Dejar de seguir» en la pantalla de la persona. Al dejar de seguir, los datos compartidos se borran de la cuenta de iCloud de quien sigue.
+- Aceptar una invitación es gratis; seguir es una función Premium (con En familia de Apple basta la suscripción de un miembro).
 
 ---
 
@@ -148,6 +170,7 @@ MedTime **no comparte los datos de los usuarios con ningún tercero, no los vend
 - Las búsquedas en la base de datos de medicamentos descritas en la Sección 3.4 (NosyAPI / openFDA de la FDA de EE. UU. / AEMPS CIMA): solo se transmite el código escaneado o el nombre del medicamento buscado; no contiene ningún dato personal.
 - Los informes de fallos anónimos descritos en la Sección 4 (Sentry).
 - Los datos anónimos de validación de la suscripción y el token de atribución publicitaria sin identificación descritos en la Sección 5 (RevenueCat + Apple).
+- El uso compartido en familia descrito en la Sección 2.2, **iniciado y aprobado por usted** — solo con la persona a la que invitó o cuya invitación aceptó, mediante Apple iCloud.
 
 ---
 
@@ -171,7 +194,7 @@ La aplicación tiene una clasificación de **4+**. No se recopilan datos a sabie
 
 ## 10. Seguridad de los datos
 
-Dado que sus datos se almacenan mayoritariamente en su dispositivo, están protegidos por el cifrado de hardware de iOS (Secure Enclave). La comunicación con los servicios de terceros está cifrada mediante HTTPS.
+Dado que sus datos se almacenan mayoritariamente en su dispositivo, están protegidos por el cifrado de hardware de iOS (Secure Enclave). La comunicación con los servicios de terceros está cifrada mediante HTTPS. Los datos de medicamentos de la copia en iCloud y del uso compartido en familia se guardan en campos cifrados de extremo a extremo de Apple CloudKit; nadie, ni siquiera el desarrollador, puede leerlos.
 
 ---
 

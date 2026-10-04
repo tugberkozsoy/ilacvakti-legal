@@ -26,12 +26,13 @@ Detaillierte Liste der nicht erhobenen Daten:
 - ❌ Speicherung von Audioaufnahmen (das Mikrofon wird nur für die optionale Spracheingabe aktiviert, siehe 3.6)
 - ❌ Kontoerstellung, E-Mail, Telefon
 - ❌ Apple-Health-Daten **verlassen Ihr Gerät nicht** (die optionale Lese-/Schreib-Synchronisierung läuft auf dem Gerät, siehe 3.5)
+- ❌ Ihre iCloud-Sicherung und Ihre Familienfreigabe-Daten **erreichen den Entwickler nicht** (sie bleiben in Ihren eigenen iCloud-Konten, siehe 2.1 und 2.2)
 
 ---
 
 ## 2. Lokale Speicherung (auf Ihrem Gerät gespeicherte Daten)
 
-Alle von Ihnen eingegebenen Informationen werden **ausschließlich im internen Speicher Ihres Geräts** gespeichert:
+Die von Ihnen eingegebenen Informationen werden **im internen Speicher Ihres Geräts** gespeichert; der Entwickler betreibt keinen Server, der diese Daten speichert:
 
 - Medikamentennamen, Dosierungen, Erinnerungszeiten
 - Profilnamen (von Ihnen angegebene Namen) und optionales Profilfoto
@@ -41,7 +42,28 @@ Alle von Ihnen eingegebenen Informationen werden **ausschließlich im internen S
 - Manuell hinzugefügte Gesundheitsberichte und Notizen
 - Einstellungen für Design, Sprache, Benachrichtigungston und sonstige Präferenzen
 
-Wenn Sie die App löschen, werden all diese Daten gemeinsam mit Ihrem Gerät entfernt.
+Wenn Sie die App löschen, werden diese Daten von Ihrem Gerät entfernt. Ist die iCloud-Sicherung aktiv, bleibt Ihre Sicherung in Ihrem eigenen iCloud-Konto (siehe 2.1).
+
+### 2.1 iCloud-Sicherung (standardmäßig aktiv, abschaltbar)
+
+Wenn Sie auf Ihrem iPhone bei iCloud angemeldet sind, speichert die App einmal täglich eine Sicherung Ihrer Daten im **privaten Bereich Ihres eigenen iCloud-Kontos** (private Apple-CloudKit-Datenbank). So kehren Ihre Medikamente und Ihr Verlauf nach einem Telefonwechsel oder einer Neuinstallation zurück.
+
+- Die Sicherung umfasst Medikamente, Profile, Berichte, Messwerte, Einnahmeverlauf, Abzeichen/Serien und App-Einstellungen. **Fotos sind nicht enthalten.**
+- Die Sicherung liegt in Apples Ende-zu-Ende-verschlüsselten Feldern (CloudKit-verschlüsselte Werte); der Schlüssel befindet sich in Ihrem iCloud-Schlüsselbund. Sehr große Sicherungen (jahrelanger Verlauf) werden als verschlüsselte Datei in iCloud abgelegt; mit aktiviertem Erweitertem Datenschutz ist auch diese Datei Ende-zu-Ende-verschlüsselt.
+- Die Sicherung gelangt nie auf Server des Entwicklers; **der Entwickler hat keinen Zugriff darauf.** Sie nutzt Ihren iCloud-Speicher.
+- Die Liste Ihrer Familienverbindungen (wem Sie folgen, wer Ihre Dosen sieht) wird ebenso gesichert, damit Verbindungen ein neues Telefon überstehen.
+- Abschalten: in der App unter Einstellungen › Datenverwaltung › iCloud-Sicherung. Löschen: iPhone-Einstellungen › [Ihr Name] › iCloud › Accountspeicher verwalten › MedTime.
+
+### 2.2 Familienfreigabe (optional)
+
+Sie können die Medikamente eines Angehörigen von Ihrem eigenen Telefon aus im Blick behalten. Die Freigabe beginnt nur durch **eine ausdrückliche Handlung beider Seiten**: Die folgende Person sendet einen Einladungslink; die Person, der gefolgt wird, sieht auf ihrem eigenen Telefon, was geteilt wird, und **tippt auf „Annehmen“.**
+
+- **Geteilt werden:** die Angaben der Medikamentenkarten des geteilten Profils (etwa Name, Wirkstoff, Dosis, Uhrzeiten, Einnahmehinweise und Medikamentennotiz), genommene oder zurückgenommene Dosen samt Markierungszeit, Profilname und -farbe sowie die Zeitzone des Geräts.
+- **Nicht geteilt werden:** das Medikamenten-Tagebuch (Befinden/Nebenwirkungen), Blutdruck- und Blutzuckerwerte, Fotos, Beipackzettel und andere Profile.
+- Die Daten werden über Apple iCloud (CloudKit-Freigabe) übertragen und **im iCloud-Konto der folgenden Person** gespeichert; Medikamentennamen und -angaben liegen in Ende-zu-Ende-verschlüsselten Feldern. Wird eine Dosis nicht innerhalb der gewählten Zeit markiert, erhält die folgende Person einen Hinweis; dies wird auf ihrem Gerät berechnet.
+- **Der Entwickler hat keinen Zugriff auf diese Daten**; sie laufen nicht über Server des Entwicklers.
+- **Beenden:** Die Person, der gefolgt wird, jederzeit unter Einstellungen › Familie („… sieht deine Dosen“), die folgende Person über „Nicht mehr folgen“ auf dem Personenbildschirm. Danach werden die geteilten Daten aus dem iCloud-Konto der folgenden Person gelöscht.
+- Eine Einladung anzunehmen ist kostenlos; das Folgen ist eine Premium-Funktion (mit der Apple-Familienfreigabe genügt das Abo eines Familienmitglieds).
 
 ---
 
@@ -148,6 +170,7 @@ MedTime **gibt Nutzerdaten an keinen Dritten weiter, verkauft sie nicht und verw
 - Die in Abschnitt 3.4 beschriebenen Medikamentendatenbank-Abfragen (NosyAPI / U.S. FDA openFDA / AEMPS CIMA) – übertragen wird ausschließlich der gescannte Code oder der gesuchte Medikamentenname; sie enthalten keine personenbezogenen Daten.
 - Die in Abschnitt 4 beschriebenen anonymen Absturzberichte (Sentry).
 - Die in Abschnitt 5 beschriebenen anonymen Daten zur Abonnement-Validierung sowie das nicht identifizierende Werbe-Attributions-Token (RevenueCat + Apple).
+- Die in Abschnitt 2.2 beschriebene, **von Ihnen gestartete und bestätigte** Familienfreigabe — nur mit der Person, die Sie eingeladen haben oder deren Einladung Sie angenommen haben, über Apple iCloud.
 
 ---
 
@@ -171,7 +194,7 @@ Die App ist mit **4+** eingestuft. Es werden wissentlich keine Daten von Kindern
 
 ## 10. Datensicherheit
 
-Da Ihre Daten überwiegend auf Ihrem Gerät gespeichert werden, sind sie durch die Hardwareverschlüsselung von iOS (Secure Enclave) geschützt. Die Kommunikation mit Drittanbieterdiensten erfolgt verschlüsselt über HTTPS.
+Da Ihre Daten überwiegend auf Ihrem Gerät gespeichert werden, sind sie durch die Hardwareverschlüsselung von iOS (Secure Enclave) geschützt. Die Kommunikation mit Drittanbieterdiensten erfolgt verschlüsselt über HTTPS. Medikamentendaten in der iCloud-Sicherung und der Familienfreigabe liegen in Ende-zu-Ende-verschlüsselten Feldern von Apple CloudKit; niemand, auch nicht der Entwickler, kann sie lesen.
 
 ---
 

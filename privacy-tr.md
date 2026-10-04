@@ -26,12 +26,13 @@ Toplanmayan veriler ayrıntılı liste:
 - ❌ Ses kaydı saklama (mikrofon yalnız isteğe bağlı sesli girişte açılır, bkz. 3.6)
 - ❌ Hesap oluşturma, e-posta, telefon
 - ❌ Apple Health verisi cihazınızdan **dışarı çıkmaz** (isteğe bağlı okuma/yazma senkronu cihaz içinde çalışır, bkz. 3.5)
+- ❌ iCloud yedeğiniz ve aile paylaşımı verileriniz geliştiriciye **ulaşmaz** (kendi iCloud hesaplarınızda kalır, bkz. 2.1 ve 2.2)
 
 ---
 
 ## 2. Yerel Depolama (Cihazda Saklanan Veriler)
 
-Uygulamaya girdiğiniz tüm bilgiler **yalnızca cihazınızın dahili hafızasında** saklanır:
+Uygulamaya girdiğiniz bilgiler **cihazınızın dahili hafızasında** saklanır; geliştiricinin bu verileri tuttuğu bir sunucusu yoktur:
 
 - İlaç adları, dozajları, hatırlatma saatleri
 - Profil isimleri (sizin verdiğiniz adlar) ve opsiyonel profil fotoğrafı
@@ -41,7 +42,28 @@ Uygulamaya girdiğiniz tüm bilgiler **yalnızca cihazınızın dahili hafızas�
 - Manuel eklenen sağlık raporları ve notları
 - Tema, dil, bildirim sesi ve ayar tercihleri
 
-Uygulamayı sildiğinizde bu verilerin tümü cihazınızla birlikte silinir.
+Uygulamayı sildiğinizde bu veriler cihazınızdan silinir. iCloud yedeği açıksa yedeğiniz kendi iCloud hesabınızda kalır (bkz. 2.1).
+
+### 2.1 iCloud Yedeği (varsayılan açık, kapatılabilir)
+
+iPhone'unuzda iCloud oturumu açıksa uygulama, verilerinizin bir yedeğini günde bir kez **kendi iCloud hesabınızın özel alanına** (Apple CloudKit özel veritabanı) kaydeder. Böylece telefon değiştirdiğinizde ya da uygulamayı yeniden yüklediğinizde ilaçlarınız ve geçmişiniz geri gelir.
+
+- Yedek; ilaçlar, profiller, raporlar, ölçümler, doz geçmişi, rozet/seri bilgisi ve uygulama ayarlarını içerir. **Fotoğraflar yedeğe dahil edilmez.**
+- Yedek, Apple'ın uçtan uca şifreli alanlarında (CloudKit şifreli alanlar) saklanır; şifreleme anahtarı iCloud Anahtar Zincirinizdedir. Çok büyük yedeklerde (yıllara yayılan geçmiş) veri iCloud'da şifreli bir dosya olarak tutulur; Gelişmiş Veri Koruması açıksa bu dosya da uçtan uca şifrelidir.
+- Yedek geliştiricinin sunucusuna gitmez; **geliştirici yedeğinize erişemez.** Depolama, iCloud kotanızı kullanır.
+- Aile paylaşımı bağlantılarınızın listesi (kimi takip ettiğiniz, dozlarınızı kimin gördüğü) da aynı şekilde yedeklenir; yeni telefonda bağlantı kopmaz.
+- Kapatmak: uygulamada Ayarlar › Veri Yönetimi › iCloud yedeği. Silmek: iPhone Ayarlar › [adınız] › iCloud › Hesap Depolamasını Yönet › İlaçVakti.
+
+### 2.2 Aile Paylaşımı (isteğe bağlı)
+
+Bir yakınınızın ilaçlarını kendi telefonunuzdan takip edebilirsiniz. Paylaşım yalnız **iki tarafın açık işlemiyle** başlar: takip edecek kişi bir davet bağlantısı gönderir; takip edilecek kişi kendi telefonunda neyin paylaşılacağını görür ve **"Kabul et"e basar.**
+
+- **Paylaşılanlar:** paylaşılan profilin ilaç kartlarındaki bilgiler (ad, etken madde, doz, saatler, kullanım talimatı, ilaç notu gibi), alınan ya da geri alınan dozlar ve işaretleme zamanları, profil adı ve rengi, cihazın saat dilimi.
+- **Paylaşılmayanlar:** İlaç Günlüğü (his/yan etki notları), tansiyon ve şeker ölçümleri, fotoğraflar, prospektüsler, diğer profiller.
+- Veriler Apple iCloud (CloudKit paylaşımı) üzerinden aktarılır ve **takip eden kişinin iCloud hesabında** saklanır; ilaç adları ve ilaç bilgileri uçtan uca şifreli alanlardadır. Bir doz belirlenen süre içinde işaretlenmezse takip eden kişiye bildirim gider; bu hesap onun cihazında yapılır.
+- **Geliştirici bu verilere erişemez**; veriler geliştiricinin sunucusundan geçmez.
+- **Durdurmak:** takip edilen kişi Ayarlar › Aile'deki "… dozlarını görüyor" satırından, takip eden kişi kişi ekranındaki "Takibi bırak" ile istediği an durdurabilir. Takip bırakılınca paylaşılan veriler takip eden kişinin iCloud hesabından silinir.
+- Daveti kabul etmek ücretsizdir; takip etmek Premium özelliğidir (Apple Aile Paylaşımı açıksa ailede bir kişinin aboneliği yeter).
 
 ---
 
@@ -148,6 +170,7 @@ Apple Standart EULA geçerlidir: <https://www.apple.com/legal/internet-services/
 - Bölüm 3.4'te belirtilen ilaç veritabanı sorgulamaları (NosyAPI / ABD FDA openFDA / AEMPS CIMA) — yalnızca taranan kod veya aranan ilaç adı iletilir, kişisel veri içermez.
 - Bölüm 4'te belirtilen anonim çökme raporları (Sentry).
 - Bölüm 5'te belirtilen anonim abonelik doğrulama verisi ve kimlik içermeyen reklam atıf jetonu (RevenueCat + Apple).
+- Bölüm 2.2'de anlatılan, **sizin başlattığınız ve onayladığınız** aile paylaşımı — yalnız davet ettiğiniz ya da davetini kabul ettiğiniz kişiyle, Apple iCloud üzerinden.
 
 ---
 
@@ -180,7 +203,7 @@ Uygulama **4+ yaş** olarak derecelendirilmiştir. 13 yaşından küçük çocuk
 
 ## 10. Veri Güvenliği
 
-Verileriniz çoğunlukla cihazınızda saklandığı için iOS'un sunduğu donanımsal şifreleme (Secure Enclave) ile korunur. Üçüncü taraf hizmetlerle iletişim HTTPS üzerinden şifreli gerçekleşir.
+Verileriniz çoğunlukla cihazınızda saklandığı için iOS'un sunduğu donanımsal şifreleme (Secure Enclave) ile korunur. Üçüncü taraf hizmetlerle iletişim HTTPS üzerinden şifreli gerçekleşir. iCloud yedeği ve aile paylaşımındaki ilaç verileri Apple CloudKit'in uçtan uca şifreli alanlarında saklanır; geliştirici dahil kimse okuyamaz.
 
 ---
 

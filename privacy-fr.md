@@ -26,12 +26,13 @@ Liste détaillée des données non collectées :
 - ❌ Conservation d'enregistrements audio (le microphone n'est activé que pour la saisie vocale facultative, voir 3.6)
 - ❌ Création de compte, e-mail, téléphone
 - ❌ Les données Apple Santé **ne quittent pas** votre appareil (la synchronisation optionnelle en lecture/écriture fonctionne sur l'appareil, voir 3.5)
+- ❌ Votre sauvegarde iCloud et les données du partage familial **ne parviennent pas** au développeur (elles restent dans vos propres comptes iCloud, voir 2.1 et 2.2)
 
 ---
 
 ## 2. Stockage Local (Données Conservées sur Votre Appareil)
 
-Toutes les informations que vous saisissez sont stockées **uniquement dans la mémoire interne de votre appareil** :
+Les informations que vous saisissez sont stockées **dans la mémoire interne de votre appareil** ; le développeur ne dispose d'aucun serveur conservant ces données :
 
 - Noms des médicaments, dosages, heures de rappel
 - Noms de profil (noms que vous fournissez) et photo de profil facultative
@@ -41,7 +42,28 @@ Toutes les informations que vous saisissez sont stockées **uniquement dans la m
 - Rapports de santé et notes ajoutés manuellement
 - Préférences de thème, de langue, de son de notification et de paramètres
 
-Lorsque vous supprimez l'application, toutes ces données sont supprimées avec votre appareil.
+Lorsque vous supprimez l'application, ces données sont effacées de votre appareil. Si la sauvegarde iCloud est activée, votre sauvegarde reste dans votre propre compte iCloud (voir 2.1).
+
+### 2.1 Sauvegarde iCloud (activée par défaut, désactivable)
+
+Si vous êtes connecté à iCloud sur votre iPhone, l'application enregistre une fois par jour une sauvegarde de vos données dans **l'espace privé de votre propre compte iCloud** (base de données privée Apple CloudKit). Vos médicaments et votre historique reviennent ainsi lorsque vous changez de téléphone ou réinstallez l'application.
+
+- La sauvegarde comprend les médicaments, profils, rapports, mesures, l'historique des doses, badges/séries et réglages de l'application. **Les photos ne sont pas incluses.**
+- La sauvegarde est stockée dans les champs chiffrés de bout en bout d'Apple (valeurs chiffrées CloudKit) ; la clé se trouve dans votre trousseau iCloud. Les très grandes sauvegardes (des années d'historique) sont conservées sous forme de fichier chiffré dans iCloud ; avec la Protection avancée des données activée, ce fichier est lui aussi chiffré de bout en bout.
+- La sauvegarde ne passe jamais par les serveurs du développeur ; **le développeur ne peut pas y accéder.** Elle utilise votre stockage iCloud.
+- La liste de vos liens familiaux (qui vous suivez, qui voit vos doses) est sauvegardée de la même manière, afin que les liens survivent à un nouveau téléphone.
+- Pour la désactiver : dans l'application, Réglages › Gestion des données › Sauvegarde iCloud. Pour la supprimer : Réglages de l'iPhone › [votre nom] › iCloud › Gérer le stockage du compte › MedTime.
+
+### 2.2 Partage familial (optionnel)
+
+Vous pouvez suivre les médicaments d'un proche depuis votre propre téléphone. Le partage ne commence que par **une action explicite des deux côtés** : la personne qui suivra envoie un lien d'invitation ; la personne suivie voit sur son propre téléphone ce qui sera partagé et **touche « Accepter ».**
+
+- **Partagé :** les informations des fiches médicaments du profil partagé (nom, principe actif, dose, horaires, instructions et note du médicament par exemple), les doses prises ou annulées et l'heure de leur marquage, le nom et la couleur du profil, le fuseau horaire de l'appareil.
+- **Non partagé :** le Journal de médication (ressenti/effets indésirables), les mesures de tension et de glycémie, les photos, les notices et les autres profils.
+- Les données transitent par Apple iCloud (partage CloudKit) et sont stockées **dans le compte iCloud de la personne qui suit** ; les noms et informations des médicaments sont dans des champs chiffrés de bout en bout. Si une dose n'est pas cochée dans le délai choisi, la personne qui suit reçoit une alerte ; ce calcul se fait sur son appareil.
+- **Le développeur ne peut pas accéder à ces données** ; elles ne passent pas par ses serveurs.
+- **Pour arrêter :** la personne suivie peut arrêter à tout moment depuis Réglages › Famille (« … voit tes doses »), et la personne qui suit via « Ne plus suivre » sur l'écran de la personne. Les données partagées sont alors supprimées du compte iCloud de la personne qui suit.
+- Accepter une invitation est gratuit ; suivre est une fonction Premium (avec le Partage familial d'Apple, l'abonnement d'un seul membre suffit).
 
 ---
 
@@ -148,6 +170,7 @@ MedTime ne **partage pas les données des utilisateurs avec un tiers, ne les ven
 - Les consultations de la base de données de médicaments décrites dans la Section 3.4 (NosyAPI / U.S. FDA openFDA / AEMPS CIMA) — seul le code scanné ou le nom du médicament recherché est transmis ; il ne contient aucune donnée personnelle.
 - Les rapports de plantage anonymes décrits dans la Section 4 (Sentry).
 - Les données anonymes de validation d'abonnement ainsi que le jeton d'attribution publicitaire non identifiant décrits dans la Section 5 (RevenueCat + Apple).
+- Le partage familial décrit à la Section 2.2, **lancé et approuvé par vous** — uniquement avec la personne que vous avez invitée ou dont vous avez accepté l'invitation, via Apple iCloud.
 
 ---
 
@@ -171,7 +194,7 @@ L'application est classée **4+**. Aucune donnée n'est sciemment collectée aup
 
 ## 10. Sécurité des Données
 
-Comme vos données sont principalement stockées sur votre appareil, elles sont protégées par le chiffrement matériel d'iOS (Secure Enclave). Les communications avec les services tiers sont chiffrées via HTTPS.
+Comme vos données sont principalement stockées sur votre appareil, elles sont protégées par le chiffrement matériel d'iOS (Secure Enclave). Les communications avec les services tiers sont chiffrées via HTTPS. Les données de médicaments de la sauvegarde iCloud et du partage familial sont stockées dans les champs chiffrés de bout en bout d'Apple CloudKit ; personne, pas même le développeur, ne peut les lire.
 
 ---
 

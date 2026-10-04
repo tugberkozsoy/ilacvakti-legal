@@ -26,12 +26,13 @@ Detailed list of data not collected:
 - ❌ Storing audio recordings (the microphone is only activated for optional voice entry, see 3.6)
 - ❌ Account creation, email, phone
 - ❌ Apple Health data **never leaves** your device (the optional read/write sync runs on-device, see 3.5)
+- ❌ Your iCloud backup and family sharing data **never reach** the developer (they stay in your own iCloud accounts, see 2.1 and 2.2)
 
 ---
 
 ## 2. Local Storage (Data Kept on Your Device)
 
-All information you enter is stored **only on your device's internal memory**:
+The information you enter is stored **on your device's internal memory**; the developer has no server that holds this data:
 
 - Medication names, dosages, reminder times
 - Profile names (names you provide) and optional profile photo
@@ -41,7 +42,28 @@ All information you enter is stored **only on your device's internal memory**:
 - Manually added health reports and notes
 - Theme, language, notification sound, and settings preferences
 
-When you delete the app, all this data is deleted with your device.
+When you delete the app, this data is removed from your device. If iCloud backup is on, your backup stays in your own iCloud account (see 2.1).
+
+### 2.1 iCloud Backup (on by default, can be turned off)
+
+If you are signed in to iCloud on your iPhone, the app saves a backup of your data once a day to **the private area of your own iCloud account** (Apple CloudKit private database). This brings your medicines and history back when you change phones or reinstall the app.
+
+- The backup contains medicines, profiles, reports, readings, dose history, badge/streak information and app settings. **Photos are not included.**
+- The backup is stored in Apple's end-to-end encrypted fields (CloudKit encrypted values); the encryption key is in your iCloud Keychain. Very large backups (years of history) are kept as an encrypted file in iCloud; with Advanced Data Protection on, this file is end-to-end encrypted as well.
+- The backup never goes to the developer's servers; **the developer cannot access your backup.** It uses your iCloud storage.
+- The list of your family sharing connections (who you follow, who sees your doses) is backed up the same way, so connections survive a new phone.
+- To turn it off: in the app, Settings › Data Management › iCloud backup. To delete it: iPhone Settings › [your name] › iCloud › Manage Account Storage › MedTime.
+
+### 2.2 Family Sharing (optional)
+
+You can keep an eye on a loved one's medicines from your own phone. Sharing starts only with **an explicit action on both sides**: the person who will follow sends an invite link; the person being followed sees on their own phone what will be shared and **taps "Accept".**
+
+- **Shared:** the medicine card details of the shared profile (such as name, active ingredient, dose, times, instructions and medicine note), doses taken or undone and when they were marked, the profile name and color, the device's time zone.
+- **Not shared:** the Medication Diary (feelings/side-effect notes), blood pressure and glucose readings, photos, leaflets, other profiles.
+- The data is transferred via Apple iCloud (CloudKit sharing) and stored **in the follower's iCloud account**; medicine names and details are in end-to-end encrypted fields. If a dose isn't marked within the chosen time, the follower gets an alert; this is calculated on the follower's device.
+- **The developer cannot access this data**; it never passes through the developer's servers.
+- **To stop:** the person being followed can stop anytime from Settings › Family ("… sees your doses"), and the follower from "Stop following" on the person's screen. When following stops, the shared data is deleted from the follower's iCloud account.
+- Accepting an invite is free; following is a Premium feature (with Apple Family Sharing, one family member's subscription is enough).
 
 ---
 
@@ -148,6 +170,7 @@ MedTime does **not share user data with any third party, does not sell it, and d
 - The medication-database lookups described in Section 3.4 (NosyAPI / U.S. FDA openFDA / AEMPS CIMA) — only the scanned code or searched medicine name is transmitted; it contains no personal data.
 - Anonymous crash reports described in Section 4 (Sentry).
 - Anonymous subscription validation data and the non-identifying ad attribution token described in Section 5 (RevenueCat + Apple).
+- Family sharing described in Section 2.2, **started and approved by you** — only with the person you invited or whose invite you accepted, via Apple iCloud.
 
 ---
 
@@ -171,7 +194,7 @@ The app is rated **4+**. Data is not knowingly collected from children under 13.
 
 ## 10. Data Security
 
-Because your data is mostly stored on your device, it is protected by iOS hardware encryption (Secure Enclave). Communication with third-party services is encrypted over HTTPS.
+Because your data is mostly stored on your device, it is protected by iOS hardware encryption (Secure Enclave). Communication with third-party services is encrypted over HTTPS. Medicine data in iCloud backup and family sharing is stored in Apple CloudKit's end-to-end encrypted fields; no one, including the developer, can read it.
 
 ---
 
