@@ -48,7 +48,7 @@ Wenn Sie die App löschen, werden diese Daten von Ihrem Gerät entfernt. Ist die
 
 Wenn Sie auf Ihrem iPhone bei iCloud angemeldet sind, speichert die App einmal täglich eine Sicherung Ihrer Daten im **privaten Bereich Ihres eigenen iCloud-Kontos** (private Apple-CloudKit-Datenbank). So kehren Ihre Medikamente und Ihr Verlauf nach einem Telefonwechsel oder einer Neuinstallation zurück.
 
-- Die Sicherung umfasst Medikamente, Profile, Berichte, Messwerte, Einnahmeverlauf, Abzeichen/Serien und App-Einstellungen. **Fotos sind nicht enthalten.**
+- Die Sicherung umfasst Medikamente, Profile, Berichte, Messwerte, Einnahmeverlauf, Abzeichen/Serien und App-Einstellungen. **Fotos sind nicht enthalten.** Auch aus Apple Health übernommene Messwerte sind nicht enthalten; Apple Health speichert sie selbst, und die App liest sie auf einem neuen Telefon erneut ein.
 - Die Sicherung liegt in Apples Ende-zu-Ende-verschlüsselten Feldern (CloudKit-verschlüsselte Werte); der Schlüssel befindet sich in Ihrem iCloud-Schlüsselbund. Sehr große Sicherungen (jahrelanger Verlauf) werden als verschlüsselte Datei in iCloud abgelegt; mit aktiviertem Erweitertem Datenschutz ist auch diese Datei Ende-zu-Ende-verschlüsselt.
 - Die Sicherung gelangt nie auf Server des Entwicklers; **der Entwickler hat keinen Zugriff darauf.** Sie nutzt Ihren iCloud-Speicher.
 - Die Liste Ihrer Familienverbindungen (wem Sie folgen, wer Ihre Dosen sieht) wird ebenso gesichert, damit Verbindungen ein neues Telefon überstehen.

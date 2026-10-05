@@ -48,7 +48,7 @@ Quando você exclui o aplicativo, esses dados são apagados do seu dispositivo. 
 
 Se você tiver uma sessão do iCloud no iPhone, o aplicativo salva uma vez por dia um backup dos seus dados na **área privada da sua própria conta do iCloud** (banco de dados privado do Apple CloudKit). Assim, seus remédios e seu histórico voltam quando você troca de telefone ou reinstala o aplicativo.
 
-- O backup inclui remédios, perfis, relatórios, medições, histórico de doses, conquistas/sequências e ajustes do aplicativo. **As fotos não são incluídas.**
+- O backup inclui remédios, perfis, relatórios, medições, histórico de doses, conquistas/sequências e ajustes do aplicativo. **As fotos não são incluídas.** As medições importadas do Apple Saúde também não; o Apple Saúde as guarda por conta própria e o aplicativo as lê de novo em um telefone novo.
 - O backup fica nos campos com criptografia de ponta a ponta da Apple (valores criptografados do CloudKit); a chave fica no seu Porta-chaves do iCloud. Backups muito grandes (anos de histórico) ficam como um arquivo criptografado no iCloud; com a Proteção Avançada de Dados ativada, esse arquivo também tem criptografia de ponta a ponta.
 - O backup nunca vai para os servidores do desenvolvedor; **o desenvolvedor não pode acessá-lo.** Ele usa o seu armazenamento do iCloud.
 - A lista das suas conexões familiares (quem você acompanha, quem vê suas doses) é salva da mesma forma, para que as conexões não se percam em um novo telefone.

@@ -48,7 +48,7 @@ Uygulamayı sildiğinizde bu veriler cihazınızdan silinir. iCloud yedeği aç�
 
 iPhone'unuzda iCloud oturumu açıksa uygulama, verilerinizin bir yedeğini günde bir kez **kendi iCloud hesabınızın özel alanına** (Apple CloudKit özel veritabanı) kaydeder. Böylece telefon değiştirdiğinizde ya da uygulamayı yeniden yüklediğinizde ilaçlarınız ve geçmişiniz geri gelir.
 
-- Yedek; ilaçlar, profiller, raporlar, ölçümler, doz geçmişi, rozet/seri bilgisi ve uygulama ayarlarını içerir. **Fotoğraflar yedeğe dahil edilmez.**
+- Yedek; ilaçlar, profiller, raporlar, ölçümler, doz geçmişi, rozet/seri bilgisi ve uygulama ayarlarını içerir. **Fotoğraflar yedeğe dahil edilmez.** Apple Health'ten okunan ölçümler de yedeğe girmez; bunları Apple Health kendisi saklar ve yeni telefonda uygulama yeniden okur.
 - Yedek, Apple'ın uçtan uca şifreli alanlarında (CloudKit şifreli alanlar) saklanır; şifreleme anahtarı iCloud Anahtar Zincirinizdedir. Çok büyük yedeklerde (yıllara yayılan geçmiş) veri iCloud'da şifreli bir dosya olarak tutulur; Gelişmiş Veri Koruması açıksa bu dosya da uçtan uca şifrelidir.
 - Yedek geliştiricinin sunucusuna gitmez; **geliştirici yedeğinize erişemez.** Depolama, iCloud kotanızı kullanır.
 - Aile paylaşımı bağlantılarınızın listesi (kimi takip ettiğiniz, dozlarınızı kimin gördüğü) da aynı şekilde yedeklenir; yeni telefonda bağlantı kopmaz.

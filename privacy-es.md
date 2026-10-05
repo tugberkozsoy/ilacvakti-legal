@@ -48,7 +48,7 @@ Cuando elimina la aplicación, estos datos se borran de su dispositivo. Si la co
 
 Si ha iniciado sesión en iCloud en su iPhone, la aplicación guarda una vez al día una copia de sus datos en **el área privada de su propia cuenta de iCloud** (base de datos privada de Apple CloudKit). Así, sus medicamentos y su historial vuelven cuando cambia de teléfono o reinstala la aplicación.
 
-- La copia incluye medicamentos, perfiles, informes, mediciones, historial de dosis, insignias/rachas y ajustes de la aplicación. **Las fotos no se incluyen.**
+- La copia incluye medicamentos, perfiles, informes, mediciones, historial de dosis, insignias/rachas y ajustes de la aplicación. **Las fotos no se incluyen.** Las mediciones importadas de Apple Salud tampoco; Apple Salud las guarda por sí misma y la aplicación las vuelve a leer en un teléfono nuevo.
 - La copia se guarda en los campos cifrados de extremo a extremo de Apple (valores cifrados de CloudKit); la clave está en su Llavero de iCloud. Las copias muy grandes (años de historial) se guardan como un archivo cifrado en iCloud; con la Protección de datos avanzada activada, este archivo también está cifrado de extremo a extremo.
 - La copia nunca llega a los servidores del desarrollador; **el desarrollador no puede acceder a ella.** Utiliza su almacenamiento de iCloud.
 - La lista de sus conexiones familiares (a quién sigue, quién ve sus dosis) se guarda de la misma forma, para que no se pierdan al cambiar de teléfono.

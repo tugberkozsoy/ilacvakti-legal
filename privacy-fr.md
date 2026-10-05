@@ -48,7 +48,7 @@ Lorsque vous supprimez l'application, ces données sont effacées de votre appar
 
 Si vous êtes connecté à iCloud sur votre iPhone, l'application enregistre une fois par jour une sauvegarde de vos données dans **l'espace privé de votre propre compte iCloud** (base de données privée Apple CloudKit). Vos médicaments et votre historique reviennent ainsi lorsque vous changez de téléphone ou réinstallez l'application.
 
-- La sauvegarde comprend les médicaments, profils, rapports, mesures, l'historique des doses, badges/séries et réglages de l'application. **Les photos ne sont pas incluses.**
+- La sauvegarde comprend les médicaments, profils, rapports, mesures, l'historique des doses, badges/séries et réglages de l'application. **Les photos ne sont pas incluses.** Les mesures importées d'Apple Santé non plus ; Apple Santé les conserve lui-même et l'application les relit sur un nouveau téléphone.
 - La sauvegarde est stockée dans les champs chiffrés de bout en bout d'Apple (valeurs chiffrées CloudKit) ; la clé se trouve dans votre trousseau iCloud. Les très grandes sauvegardes (des années d'historique) sont conservées sous forme de fichier chiffré dans iCloud ; avec la Protection avancée des données activée, ce fichier est lui aussi chiffré de bout en bout.
 - La sauvegarde ne passe jamais par les serveurs du développeur ; **le développeur ne peut pas y accéder.** Elle utilise votre stockage iCloud.
 - La liste de vos liens familiaux (qui vous suivez, qui voit vos doses) est sauvegardée de la même manière, afin que les liens survivent à un nouveau téléphone.

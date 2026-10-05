@@ -48,7 +48,7 @@ Quando eliminate l'app, questi dati vengono rimossi dal vostro dispositivo. Se i
 
 Se sul vostro iPhone avete effettuato l'accesso a iCloud, l'app salva una volta al giorno un backup dei vostri dati nell'**area privata del vostro account iCloud** (database privato Apple CloudKit). Così farmaci e cronologia tornano quando cambiate telefono o reinstallate l'app.
 
-- Il backup comprende farmaci, profili, referti, misurazioni, cronologia delle dosi, badge/serie e impostazioni dell'app. **Le foto non sono incluse.**
+- Il backup comprende farmaci, profili, referti, misurazioni, cronologia delle dosi, badge/serie e impostazioni dell'app. **Le foto non sono incluse.** Nemmeno le misurazioni importate da Apple Salute; Apple Salute le conserva da sé e l'app le rilegge su un nuovo telefono.
 - Il backup è archiviato nei campi crittografati end-to-end di Apple (valori crittografati di CloudKit); la chiave si trova nel vostro Portachiavi iCloud. I backup molto grandi (anni di cronologia) sono conservati come file crittografato su iCloud; con la Protezione avanzata dei dati attiva, anche questo file è crittografato end-to-end.
 - Il backup non arriva mai ai server dello sviluppatore; **lo sviluppatore non può accedervi.** Utilizza il vostro spazio iCloud.
 - Anche l'elenco dei vostri collegamenti familiari (chi seguite, chi vede le vostre dosi) viene salvato allo stesso modo, così i collegamenti sopravvivono a un nuovo telefono.

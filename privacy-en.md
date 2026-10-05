@@ -48,7 +48,7 @@ When you delete the app, this data is removed from your device. If iCloud backup
 
 If you are signed in to iCloud on your iPhone, the app saves a backup of your data once a day to **the private area of your own iCloud account** (Apple CloudKit private database). This brings your medicines and history back when you change phones or reinstall the app.
 
-- The backup contains medicines, profiles, reports, readings, dose history, badge/streak information and app settings. **Photos are not included.**
+- The backup contains medicines, profiles, reports, readings, dose history, badge/streak information and app settings. **Photos are not included.** Readings imported from Apple Health are not included either; Apple Health keeps them itself and the app reads them again on a new phone.
 - The backup is stored in Apple's end-to-end encrypted fields (CloudKit encrypted values); the encryption key is in your iCloud Keychain. Very large backups (years of history) are kept as an encrypted file in iCloud; with Advanced Data Protection on, this file is end-to-end encrypted as well.
 - The backup never goes to the developer's servers; **the developer cannot access your backup.** It uses your iCloud storage.
 - The list of your family sharing connections (who you follow, who sees your doses) is backed up the same way, so connections survive a new phone.
