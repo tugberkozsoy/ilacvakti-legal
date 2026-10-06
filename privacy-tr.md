@@ -6,7 +6,7 @@ permalink: /privacy-tr/
 
 # İlaçVakti — Gizlilik Politikası
 
-**Son güncelleme:** 4 Ekim 2026
+**Son güncelleme:** 6 Ekim 2026
 
 İlaçVakti, Eczacı **Mehmet Tuğberk Özsoy** tarafından geliştirilen, kullanıcıların ilaç takibini kolaylaştıran bir mobil uygulamadır. Kullanıcılarımızın gizliliği temel önceliğimizdir; bu politika hangi verilerin nasıl işlendiğini şeffafça açıklar.
 
@@ -52,7 +52,7 @@ iPhone'unuzda iCloud oturumu açıksa uygulama, verilerinizin bir yedeğini gün
 - Yedek, Apple'ın uçtan uca şifreli alanlarında (CloudKit şifreli alanlar) saklanır; şifreleme anahtarı iCloud Anahtar Zincirinizdedir. Çok büyük yedeklerde (yıllara yayılan geçmiş) veri iCloud'da şifreli bir dosya olarak tutulur; Gelişmiş Veri Koruması açıksa bu dosya da uçtan uca şifrelidir.
 - Yedek geliştiricinin sunucusuna gitmez; **geliştirici yedeğinize erişemez.** Depolama, iCloud kotanızı kullanır.
 - Aile paylaşımı bağlantılarınızın listesi (kimi takip ettiğiniz, dozlarınızı kimin gördüğü) da aynı şekilde yedeklenir; yeni telefonda bağlantı kopmaz.
-- Kapatmak: uygulamada Ayarlar › Veri Yönetimi › iCloud yedeği. Silmek: iPhone Ayarlar › [adınız] › iCloud › Hesap Depolamasını Yönet › İlaçVakti.
+- Kapatmak: uygulamada Profil sekmesi › Veri Yönetimi › iCloud yedeği. Silmek: iPhone Ayarlar › [adınız] › iCloud › Hesap Depolamasını Yönet › İlaçVakti.
 
 ### 2.2 Aile Paylaşımı (isteğe bağlı)
 
@@ -62,7 +62,7 @@ Bir yakınınızın ilaçlarını kendi telefonunuzdan takip edebilirsiniz. Payl
 - **Paylaşılmayanlar:** İlaç Günlüğü (his/yan etki notları), tansiyon ve şeker ölçümleri, fotoğraflar, prospektüsler, diğer profiller.
 - Veriler Apple iCloud (CloudKit paylaşımı) üzerinden aktarılır ve **takip eden kişinin iCloud hesabında** saklanır; ilaç adları ve ilaç bilgileri uçtan uca şifreli alanlardadır. Bir doz belirlenen süre içinde işaretlenmezse takip eden kişiye bildirim gider; bu hesap onun cihazında yapılır.
 - **Geliştirici bu verilere erişemez**; veriler geliştiricinin sunucusundan geçmez.
-- **Durdurmak:** takip edilen kişi Ayarlar › Aile'deki "… dozlarını görüyor" satırından, takip eden kişi kişi ekranındaki "Takibi bırak" ile istediği an durdurabilir. Takip bırakılınca paylaşılan veriler takip eden kişinin iCloud hesabından silinir.
+- **Durdurmak:** takip edilen kişi Profil sekmesindeki "Ailen" kartında "… dozlarını görüyor" satırından, takip eden kişi kişi ekranındaki "Takibi bırak" ile istediği an durdurabilir. Takip bırakılınca paylaşılan veriler takip eden kişinin iCloud hesabından silinir.
 - Daveti kabul etmek ücretsizdir; takip etmek Premium özelliğidir (Apple Aile Paylaşımı açıksa ailede bir kişinin aboneliği yeter).
 
 ---

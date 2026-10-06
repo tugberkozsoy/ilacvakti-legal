@@ -6,7 +6,7 @@ permalink: /privacy-en/
 
 # MedTime (İlaçVakti) — Privacy Policy
 
-**Last updated:** October 4, 2026
+**Last updated:** October 6, 2026
 
 MedTime (İlaçVakti) is a mobile application developed by Pharmacist **Mehmet Tuğberk Özsoy**, designed to help users track their medications. Your privacy is our top priority; this policy transparently explains what data is processed and how.
 
@@ -52,7 +52,7 @@ If you are signed in to iCloud on your iPhone, the app saves a backup of your da
 - The backup is stored in Apple's end-to-end encrypted fields (CloudKit encrypted values); the encryption key is in your iCloud Keychain. Very large backups (years of history) are kept as an encrypted file in iCloud; with Advanced Data Protection on, this file is end-to-end encrypted as well.
 - The backup never goes to the developer's servers; **the developer cannot access your backup.** It uses your iCloud storage.
 - The list of your family sharing connections (who you follow, who sees your doses) is backed up the same way, so connections survive a new phone.
-- To turn it off: in the app, Settings › Data Management › iCloud backup. To delete it: iPhone Settings › [your name] › iCloud › Manage Account Storage › MedTime.
+- To turn it off: in the app, Profile tab › Data Management › iCloud backup. To delete it: iPhone Settings › [your name] › iCloud › Manage Account Storage › MedTime.
 
 ### 2.2 Family Sharing (optional)
 
@@ -62,7 +62,7 @@ You can keep an eye on a loved one's medicines from your own phone. Sharing star
 - **Not shared:** the Medication Diary (feelings/side-effect notes), blood pressure and glucose readings, photos, leaflets, other profiles.
 - The data is transferred via Apple iCloud (CloudKit sharing) and stored **in the follower's iCloud account**; medicine names and details are in end-to-end encrypted fields. If a dose isn't marked within the chosen time, the follower gets an alert; this is calculated on the follower's device.
 - **The developer cannot access this data**; it never passes through the developer's servers.
-- **To stop:** the person being followed can stop anytime from Settings › Family ("… sees your doses"), and the follower from "Stop following" on the person's screen. When following stops, the shared data is deleted from the follower's iCloud account.
+- **To stop:** the person being followed can stop anytime from the "Your family" card in the Profile tab ("… sees your doses"), and the follower from "Stop following" on the person's screen. When following stops, the shared data is deleted from the follower's iCloud account.
 - Accepting an invite is free; following is a Premium feature (with Apple Family Sharing, one family member's subscription is enough).
 
 ---

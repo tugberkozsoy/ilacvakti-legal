@@ -6,7 +6,7 @@ permalink: /privacy-pt/
 
 # MedTime (İlaçVakti) — Política de Privacidade
 
-**Última atualização:** 4 de outubro de 2026
+**Última atualização:** 6 de outubro de 2026
 
 O MedTime (İlaçVakti) é um aplicativo móvel desenvolvido pelo Farmacêutico **Mehmet Tuğberk Özsoy**, projetado para ajudar os usuários a controlar seus medicamentos. Sua privacidade é nossa prioridade máxima; esta política explica de forma transparente quais dados são tratados e como.
 
@@ -52,7 +52,7 @@ Se você tiver uma sessão do iCloud no iPhone, o aplicativo salva uma vez por d
 - O backup fica nos campos com criptografia de ponta a ponta da Apple (valores criptografados do CloudKit); a chave fica no seu Porta-chaves do iCloud. Backups muito grandes (anos de histórico) ficam como um arquivo criptografado no iCloud; com a Proteção Avançada de Dados ativada, esse arquivo também tem criptografia de ponta a ponta.
 - O backup nunca vai para os servidores do desenvolvedor; **o desenvolvedor não pode acessá-lo.** Ele usa o seu armazenamento do iCloud.
 - A lista das suas conexões familiares (quem você acompanha, quem vê suas doses) é salva da mesma forma, para que as conexões não se percam em um novo telefone.
-- Para desativar: no aplicativo, Ajustes › Gerenciamento de dados › Backup no iCloud. Para apagar: Ajustes do iPhone › [seu nome] › iCloud › Gerenciar Armazenamento da Conta › MedTime.
+- Para desativar: no aplicativo, aba Perfil › Gerenciamento de dados › Backup no iCloud. Para apagar: Ajustes do iPhone › [seu nome] › iCloud › Gerenciar Armazenamento da Conta › MedTime.
 
 ### 2.2 Compartilhamento familiar (opcional)
 
@@ -62,7 +62,7 @@ Você pode acompanhar os remédios de alguém próximo pelo seu próprio telefon
 - **Não compartilhado:** o Diário de medicação (como se sente/efeitos colaterais), medições de pressão e glicemia, fotos, bulas e outros perfis.
 - Os dados são transferidos pelo Apple iCloud (compartilhamento do CloudKit) e ficam **na conta do iCloud de quem acompanha**; os nomes e dados dos remédios ficam em campos com criptografia de ponta a ponta. Se uma dose não for marcada no tempo escolhido, quem acompanha recebe um alerta; esse cálculo é feito no aparelho dessa pessoa.
 - **O desenvolvedor não pode acessar esses dados**; eles não passam pelos servidores do desenvolvedor.
-- **Para parar:** a pessoa acompanhada pode parar quando quiser em Ajustes › Família ("… vê suas doses"), e quem acompanha em "Parar de acompanhar" na tela da pessoa. Ao parar, os dados compartilhados são apagados da conta do iCloud de quem acompanha.
+- **Para parar:** a pessoa acompanhada pode parar quando quiser no cartão "Sua família" da aba Perfil ("… vê suas doses"), e quem acompanha em "Parar de acompanhar" na tela da pessoa. Ao parar, os dados compartilhados são apagados da conta do iCloud de quem acompanha.
 - Aceitar um convite é grátis; acompanhar é um recurso Premium (com o Compartilhamento Familiar da Apple, basta a assinatura de um membro da família).
 
 ---

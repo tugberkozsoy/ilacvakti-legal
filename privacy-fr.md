@@ -6,7 +6,7 @@ permalink: /privacy-fr/
 
 # MedTime (İlaçVakti) — Politique de Confidentialité
 
-**Dernière mise à jour :** 4 octobre 2026
+**Dernière mise à jour :** 6 octobre 2026
 
 MedTime (İlaçVakti) est une application mobile développée par le Pharmacien **Mehmet Tuğberk Özsoy**, conçue pour aider les utilisateurs à suivre leurs médicaments. Votre vie privée est notre priorité absolue ; cette politique explique de manière transparente quelles données sont traitées et de quelle façon.
 
@@ -52,7 +52,7 @@ Si vous êtes connecté à iCloud sur votre iPhone, l'application enregistre une
 - La sauvegarde est stockée dans les champs chiffrés de bout en bout d'Apple (valeurs chiffrées CloudKit) ; la clé se trouve dans votre trousseau iCloud. Les très grandes sauvegardes (des années d'historique) sont conservées sous forme de fichier chiffré dans iCloud ; avec la Protection avancée des données activée, ce fichier est lui aussi chiffré de bout en bout.
 - La sauvegarde ne passe jamais par les serveurs du développeur ; **le développeur ne peut pas y accéder.** Elle utilise votre stockage iCloud.
 - La liste de vos liens familiaux (qui vous suivez, qui voit vos doses) est sauvegardée de la même manière, afin que les liens survivent à un nouveau téléphone.
-- Pour la désactiver : dans l'application, Réglages › Gestion des données › Sauvegarde iCloud. Pour la supprimer : Réglages de l'iPhone › [votre nom] › iCloud › Gérer le stockage du compte › MedTime.
+- Pour la désactiver : dans l'application, onglet Profil › Gestion des données › Sauvegarde iCloud. Pour la supprimer : Réglages de l'iPhone › [votre nom] › iCloud › Gérer le stockage du compte › MedTime.
 
 ### 2.2 Partage familial (optionnel)
 
@@ -62,7 +62,7 @@ Vous pouvez suivre les médicaments d'un proche depuis votre propre téléphone.
 - **Non partagé :** le Journal de médication (ressenti/effets indésirables), les mesures de tension et de glycémie, les photos, les notices et les autres profils.
 - Les données transitent par Apple iCloud (partage CloudKit) et sont stockées **dans le compte iCloud de la personne qui suit** ; les noms et informations des médicaments sont dans des champs chiffrés de bout en bout. Si une dose n'est pas cochée dans le délai choisi, la personne qui suit reçoit une alerte ; ce calcul se fait sur son appareil.
 - **Le développeur ne peut pas accéder à ces données** ; elles ne passent pas par ses serveurs.
-- **Pour arrêter :** la personne suivie peut arrêter à tout moment depuis Réglages › Famille (« … voit tes doses »), et la personne qui suit via « Ne plus suivre » sur l'écran de la personne. Les données partagées sont alors supprimées du compte iCloud de la personne qui suit.
+- **Pour arrêter :** la personne suivie peut arrêter à tout moment depuis la carte « Ta famille » de l'onglet Profil (« … voit tes doses »), et la personne qui suit via « Ne plus suivre » sur l'écran de la personne. Les données partagées sont alors supprimées du compte iCloud de la personne qui suit.
 - Accepter une invitation est gratuit ; suivre est une fonction Premium (avec le Partage familial d'Apple, l'abonnement d'un seul membre suffit).
 
 ---

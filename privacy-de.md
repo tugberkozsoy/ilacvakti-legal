@@ -6,7 +6,7 @@ permalink: /privacy-de/
 
 # MedTime (İlaçVakti) — Datenschutzerklärung
 
-**Zuletzt aktualisiert:** 4. Oktober 2026
+**Zuletzt aktualisiert:** 6. Oktober 2026
 
 MedTime (İlaçVakti) ist eine mobile Anwendung, die von dem Apotheker **Mehmet Tuğberk Özsoy** entwickelt wurde und Nutzerinnen und Nutzer dabei unterstützt, ihre Medikamente im Blick zu behalten. Der Schutz Ihrer Privatsphäre hat für uns höchste Priorität; diese Erklärung legt transparent dar, welche Daten verarbeitet werden und auf welche Weise.
 
@@ -52,7 +52,7 @@ Wenn Sie auf Ihrem iPhone bei iCloud angemeldet sind, speichert die App einmal t
 - Die Sicherung liegt in Apples Ende-zu-Ende-verschlüsselten Feldern (CloudKit-verschlüsselte Werte); der Schlüssel befindet sich in Ihrem iCloud-Schlüsselbund. Sehr große Sicherungen (jahrelanger Verlauf) werden als verschlüsselte Datei in iCloud abgelegt; mit aktiviertem Erweitertem Datenschutz ist auch diese Datei Ende-zu-Ende-verschlüsselt.
 - Die Sicherung gelangt nie auf Server des Entwicklers; **der Entwickler hat keinen Zugriff darauf.** Sie nutzt Ihren iCloud-Speicher.
 - Die Liste Ihrer Familienverbindungen (wem Sie folgen, wer Ihre Dosen sieht) wird ebenso gesichert, damit Verbindungen ein neues Telefon überstehen.
-- Abschalten: in der App unter Einstellungen › Datenverwaltung › iCloud-Sicherung. Löschen: iPhone-Einstellungen › [Ihr Name] › iCloud › Accountspeicher verwalten › MedTime.
+- Abschalten: in der App unter Tab „Profil“ › Datenverwaltung › iCloud-Sicherung. Löschen: iPhone-Einstellungen › [Ihr Name] › iCloud › Accountspeicher verwalten › MedTime.
 
 ### 2.2 Familienfreigabe (optional)
 
@@ -62,7 +62,7 @@ Sie können die Medikamente eines Angehörigen von Ihrem eigenen Telefon aus im 
 - **Nicht geteilt werden:** das Medikamenten-Tagebuch (Befinden/Nebenwirkungen), Blutdruck- und Blutzuckerwerte, Fotos, Beipackzettel und andere Profile.
 - Die Daten werden über Apple iCloud (CloudKit-Freigabe) übertragen und **im iCloud-Konto der folgenden Person** gespeichert; Medikamentennamen und -angaben liegen in Ende-zu-Ende-verschlüsselten Feldern. Wird eine Dosis nicht innerhalb der gewählten Zeit markiert, erhält die folgende Person einen Hinweis; dies wird auf ihrem Gerät berechnet.
 - **Der Entwickler hat keinen Zugriff auf diese Daten**; sie laufen nicht über Server des Entwicklers.
-- **Beenden:** Die Person, der gefolgt wird, jederzeit unter Einstellungen › Familie („… sieht deine Dosen“), die folgende Person über „Nicht mehr folgen“ auf dem Personenbildschirm. Danach werden die geteilten Daten aus dem iCloud-Konto der folgenden Person gelöscht.
+- **Beenden:** Die Person, der gefolgt wird, jederzeit über die Karte „Deine Familie“ im Tab „Profil“ („… sieht deine Dosen“), die folgende Person über „Nicht mehr folgen“ auf dem Personenbildschirm. Danach werden die geteilten Daten aus dem iCloud-Konto der folgenden Person gelöscht.
 - Eine Einladung anzunehmen ist kostenlos; das Folgen ist eine Premium-Funktion (mit der Apple-Familienfreigabe genügt das Abo eines Familienmitglieds).
 
 ---
